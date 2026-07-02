@@ -21,24 +21,24 @@
         "isProtected": true
     },
     {
-        "name": "mystore",
+        "name": "My-Store",
         "owner": "My-Store-Group",
         "ownerAvatar": "https://avatars.githubusercontent.com/u/298945401?v=4",
-        "description": "mystore",
+        "description": "My Store",
         "version": "v1.0",
-        "downloadUrl": "https://github.com/My-Store-Group/mystore/releases/download/v1.0/My.Store.v1.0.apk",
-        "iconUrl": "https://raw.githubusercontent.com/My-Store-Group/mystore/main/icon.png",
+        "downloadUrl": "https://github.com/My-Store-Group/My-Store/releases/download/v1.0/My.Store.v1.0.apk",
+        "iconUrl": "https://raw.githubusercontent.com/My-Store-Group/My-Store/main/icon.png",
         "screenshots": [
-            "https://raw.githubusercontent.com/My-Store-Group/mystore/main/screenshot1.png",
-            "https://raw.githubusercontent.com/My-Store-Group/mystore/main/screenshot2.png"
+            "https://raw.githubusercontent.com/My-Store-Group/My-Store/main/screenshot1.png",
+            "https://raw.githubusercontent.com/My-Store-Group/My-Store/main/screenshot2.png"
         ],
         "releaseNotes": "My Store App",
         "fileSize": "17 MB",
         "category": "Apps",
-        "repoUrl": "https://github.com/My-Store-Group/mystore",
-        "stars": 1,
+        "repoUrl": "https://github.com/My-Store-Group/My-Store",
+        "stars": 2,
         "forks": 0,
-        "updatedAt": "2026-07-02T06:38:38Z",
+        "updatedAt": "2026-07-02T10:53:15Z",
         "isProtected": true
     },
     {
@@ -59,7 +59,7 @@
         "repoUrl": "https://github.com/Phone-Group/phone-distribution",
         "stars": 1,
         "forks": 0,
-        "updatedAt": "2026-07-02T07:07:10Z",
+        "updatedAt": "2026-07-02T10:27:54Z",
         "isProtected": true
     }
 ]
