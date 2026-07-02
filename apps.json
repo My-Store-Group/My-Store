@@ -40,29 +40,29 @@
         "repoUrl": "https://github.com/My-Store-Group/My-Store",
         "stars": 2,
         "forks": 0,
-        "updatedAt": "2026-07-02T15:16:59Z",
+        "updatedAt": "2026-07-02T15:59:23Z",
         "isProtected": true
     },
     {
-        "name": "phone-distribution",
+        "name": "PhoneApp",
         "packageName": "com.amrutanshu.phone",
         "owner": "Phone-Group",
         "ownerAvatar": "https://avatars.githubusercontent.com/u/298657294?v=4",
         "description": "phone-distribution",
         "version": "v2.2.3",
-        "downloadUrl": "https://github.com/Phone-Group/phone-distribution/releases/download/v2.2.3/Phone.v2.2.3.apk",
-        "iconUrl": "https://raw.githubusercontent.com/Phone-Group/phone-distribution/main/icon.png",
+        "downloadUrl": "https://github.com/Phone-Group/PhoneApp/releases/download/v2.2.3/Phone.v2.2.3.apk",
+        "iconUrl": "https://raw.githubusercontent.com/Phone-Group/PhoneApp/main/icon.png",
         "screenshots": [
-            "https://raw.githubusercontent.com/Phone-Group/phone-distribution/main/screenshot1.png",
-            "https://raw.githubusercontent.com/Phone-Group/phone-distribution/main/screenshot2.png"
+            "https://raw.githubusercontent.com/Phone-Group/PhoneApp/main/screenshot1.png",
+            "https://raw.githubusercontent.com/Phone-Group/PhoneApp/main/screenshot2.png"
         ],
         "releaseNotes": "Ui bug fix!\r\nopen to keypad and open to last view update.\r\nstability improvements",
         "fileSize": "18 MB",
         "category": "Apps",
-        "repoUrl": "https://github.com/Phone-Group/phone-distribution",
+        "repoUrl": "https://github.com/Phone-Group/PhoneApp",
         "stars": 1,
         "forks": 0,
-        "updatedAt": "2026-07-02T10:27:54Z",
+        "updatedAt": "2026-07-02T16:00:36Z",
         "isProtected": true
     },
     {
