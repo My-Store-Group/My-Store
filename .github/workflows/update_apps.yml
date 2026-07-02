@@ -1,0 +1,108 @@
+name: Update App List
+on:
+  schedule:
+    - cron: '0 * * * *' # Har ghante apne aap chalega
+  workflow_dispatch: # Aap manually bhi button daba kar chala sakte ho
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      - name: Install dependencies
+        run: pip install requests
+      - name: Run Update Script
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python - <<EOF
+          import requests
+          import json
+          import os
+
+          token = os.getenv('GH_TOKEN')
+          headers = {'Authorization': f'token {token}', 'Accept': 'application/vnd.github.v3+json'}
+          
+          def get_apps():
+              apps = []
+              # Topic search
+              query = "topic:my-store-distribution"
+              url = f"https://api.github.com/search/repositories?q={query}"
+              response = requests.get(url, headers=headers).json()
+              
+              repos = response.get('items', [])
+              for repo in repos:
+                  owner = repo['owner']['login']
+                  name = repo['name']
+                  
+                  # Get releases
+                  rel_url = f"https://api.github.com/repos/{owner}/{name}/releases"
+                  releases = requests.get(rel_url, headers=headers).json()
+                  
+                  apk_url = ""
+                  apk_size = 0
+                  version = "v1.0"
+                  release_notes = "Verified distribution."
+                  
+                  if isinstance(releases, list) and len(releases) > 0:
+                      for rel in releases:
+                          assets = rel.get('assets', [])
+                          apk_asset = next((a for a in assets if a['name'].lower().endswith('.apk')), None)
+                          if apk_asset:
+                              apk_url = apk_asset['browser_download_url']
+                              apk_size = apk_asset['size']
+                              version = rel['tag_name']
+                              release_notes = rel.get('body', "Updates included.")
+                              break
+                  
+                  if not apk_url:
+                      # Try contents for dev build
+                      cont_url = f"https://api.github.com/repos/{owner}/{name}/contents/"
+                      contents = requests.get(cont_url, headers=headers).json()
+                      if isinstance(contents, list):
+                          apk_file = next((f for f in contents if f['name'].lower().endswith('.apk')), None)
+                          if apk_file:
+                              apk_url = apk_file['download_url']
+                              apk_size = apk_file.get('size', 0)
+                              version = "Dev Build"
+
+                  if apk_url:
+                      branch = repo.get('default_branch', 'main')
+                      apps.append({
+                          "name": name,
+                          "owner": owner,
+                          "ownerAvatar": repo['owner']['avatar_url'],
+                          "description": repo.get('description') or "Verified Distribution",
+                          "version": version,
+                          "downloadUrl": apk_url,
+                          "iconUrl": f"https://raw.githubusercontent.com/{owner}/{name}/{branch}/icon.png",
+                          "screenshots": [
+                              f"https://raw.githubusercontent.com/{owner}/{name}/{branch}/screenshot1.png",
+                              f"https://raw.githubusercontent.com/{owner}/{name}/{branch}/screenshot2.png"
+                          ],
+                          "releaseNotes": release_notes,
+                          "fileSize": f"{apk_size // (1024 * 1024)} MB",
+                          "category": "Games" if ("game" in (repo.get('topics') or []) or "game" in name.lower()) else "Apps",
+                          "repoUrl": repo['html_url'],
+                          "stars": repo['stargazers_count'],
+                          "forks": repo['forks_count'],
+                          "updatedAt": repo['updated_at'],
+                          "isProtected": True
+                      })
+              return apps
+
+          all_apps = get_apps()
+          with open('apps.json', 'w') as f:
+              json.dump(all_apps, f, indent=4)
+          EOF
+      - name: Commit and Push
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+          git add apps.json
+          git commit -m "Update apps.json" || exit 0
+          git push
