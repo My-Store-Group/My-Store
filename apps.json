@@ -1,6 +1,7 @@
 [
     {
         "name": "music-distribution",
+        "packageName": "com.amrutanshu.music",
         "owner": "Music-Group-Amrutanshu-Panda",
         "ownerAvatar": "https://avatars.githubusercontent.com/u/298488720?v=4",
         "description": "music-app-updates",
@@ -22,6 +23,7 @@
     },
     {
         "name": "My-Store",
+        "packageName": "com.amrutanshu.mystore",
         "owner": "My-Store-Group",
         "ownerAvatar": "https://avatars.githubusercontent.com/u/298945401?v=4",
         "description": "My Store",
@@ -38,11 +40,12 @@
         "repoUrl": "https://github.com/My-Store-Group/My-Store",
         "stars": 2,
         "forks": 0,
-        "updatedAt": "2026-07-02T11:53:27Z",
+        "updatedAt": "2026-07-02T14:05:40Z",
         "isProtected": true
     },
     {
         "name": "phone-distribution",
+        "packageName": "com.amrutanshu.phone",
         "owner": "Phone-Group",
         "ownerAvatar": "https://avatars.githubusercontent.com/u/298657294?v=4",
         "description": "phone-distribution",
