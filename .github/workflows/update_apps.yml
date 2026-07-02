@@ -16,9 +16,7 @@ jobs:
       
       - name: Install dependencies
         run: |
-          pip install requests
-          sudo apt-get update
-          sudo apt-get install -y aapt2
+          pip install requests pyaxmlparser
 
       - name: Run Update Script
         env:
@@ -28,29 +26,26 @@ jobs:
           import requests
           import json
           import os
-          import subprocess
+          from pyaxmlparser import APK
 
           token = os.getenv('GH_TOKEN')
           headers = {'Authorization': f'token {token}', 'Accept': 'application/vnd.github.v3+json'}
           
-          def get_package_name(url):
+          def get_package_details(url):
               try:
-                  print(f"Downloading {url} to extract package name...")
+                  print(f"Downloading {url} to extract info...")
                   r = requests.get(url, stream=True)
                   with open("temp.apk", "wb") as f:
                       for chunk in r.iter_content(chunk_size=8192):
                           f.write(chunk)
                   
-                  # aapt2 tool se package name nikalna
-                  result = subprocess.run(["aapt2", "dump", "badging", "temp.apk"], capture_output=True, text=True)
-                  for line in result.stdout.splitlines():
-                      if "package: name=" in line:
-                          # Extracting name from: package: name='com.example.app' ...
-                          pname = line.split("'")[1]
-                          print(f"Found Package: {pname}")
-                          return pname
+                  # Python library se package name nikalna
+                  apk = APK("temp.apk")
+                  pname = apk.package
+                  print(f"Found Package: {pname}")
+                  return pname
               except Exception as e:
-                  print(f"Error: {e}")
+                  print(f"Error extracting APK info: {e}")
               return None
 
           def get_apps():
@@ -85,11 +80,11 @@ jobs:
                               break
                   
                   if apk_url:
-                      p_name = get_package_name(apk_url)
+                      p_name = get_package_details(apk_url)
                       branch = repo.get('default_branch', 'main')
                       apps.append({
                           "name": name,
-                          "packageName": p_name, # Unique ID extracted from APK
+                          "packageName": p_name,
                           "owner": owner,
                           "ownerAvatar": repo['owner']['avatar_url'],
                           "description": repo.get('description') or "Verified Distribution",
