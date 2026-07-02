@@ -1,24 +1,24 @@
 [
     {
-        "name": "music-distribution",
+        "name": "MusicApp",
         "packageName": "com.amrutanshu.music",
         "owner": "Music-Group-Amrutanshu-Panda",
         "ownerAvatar": "https://avatars.githubusercontent.com/u/298488720?v=4",
         "description": "music-app-updates",
         "version": "v4.3.0",
-        "downloadUrl": "https://github.com/Music-Group-Amrutanshu-Panda/music-distribution/releases/download/v4.3.0/Music.v4.3.0.apk",
-        "iconUrl": "https://raw.githubusercontent.com/Music-Group-Amrutanshu-Panda/music-distribution/main/icon.png",
+        "downloadUrl": "https://github.com/Music-Group-Amrutanshu-Panda/MusicApp/releases/download/v4.3.0/Music.v4.3.0.apk",
+        "iconUrl": "https://raw.githubusercontent.com/Music-Group-Amrutanshu-Panda/MusicApp/main/icon.png",
         "screenshots": [
-            "https://raw.githubusercontent.com/Music-Group-Amrutanshu-Panda/music-distribution/main/screenshot1.png",
-            "https://raw.githubusercontent.com/Music-Group-Amrutanshu-Panda/music-distribution/main/screenshot2.png"
+            "https://raw.githubusercontent.com/Music-Group-Amrutanshu-Panda/MusicApp/main/screenshot1.png",
+            "https://raw.githubusercontent.com/Music-Group-Amrutanshu-Panda/MusicApp/main/screenshot2.png"
         ],
         "releaseNotes": "\ud83c\udfb5 What's New in v4.3.0\r\n\r\n\ud83d\udd14Notification manager and \u2198\ufe0fDownload manager bug fix! and stability improvements.",
         "fileSize": "28 MB",
         "category": "Apps",
-        "repoUrl": "https://github.com/Music-Group-Amrutanshu-Panda/music-distribution",
+        "repoUrl": "https://github.com/Music-Group-Amrutanshu-Panda/MusicApp",
         "stars": 2,
         "forks": 0,
-        "updatedAt": "2026-07-02T04:38:40Z",
+        "updatedAt": "2026-07-02T14:50:35Z",
         "isProtected": true
     },
     {
@@ -40,7 +40,7 @@
         "repoUrl": "https://github.com/My-Store-Group/My-Store",
         "stars": 2,
         "forks": 0,
-        "updatedAt": "2026-07-02T14:13:39Z",
+        "updatedAt": "2026-07-02T14:46:29Z",
         "isProtected": true
     },
     {
