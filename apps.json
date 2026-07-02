@@ -1,26 +1,5 @@
 [
     {
-        "name": "My-Store",
-        "owner": "My-Store-Group",
-        "ownerAvatar": "https://avatars.githubusercontent.com/u/298945401?v=4",
-        "description": "My Store",
-        "version": "v1.1.2",
-        "downloadUrl": "https://github.com/My-Store-Group/My-Store/releases/download/v1.1.2/My.Store.v1.1.2.apk",
-        "iconUrl": "https://raw.githubusercontent.com/My-Store-Group/My-Store/main/icon.png",
-        "screenshots": [
-            "https://raw.githubusercontent.com/My-Store-Group/My-Store/main/screenshot1.png",
-            "https://raw.githubusercontent.com/My-Store-Group/My-Store/main/screenshot2.png"
-        ],
-        "releaseNotes": "New app show in home screen \r\nbug fix!\r\nsystem security improvements!",
-        "fileSize": "18 MB",
-        "category": "Apps",
-        "repoUrl": "https://github.com/My-Store-Group/My-Store",
-        "stars": 2,
-        "forks": 0,
-        "updatedAt": "2026-07-02T10:53:53Z",
-        "isProtected": true
-    },
-    {
         "name": "music-distribution",
         "owner": "Music-Group-Amrutanshu-Panda",
         "ownerAvatar": "https://avatars.githubusercontent.com/u/298488720?v=4",
@@ -39,6 +18,27 @@
         "stars": 2,
         "forks": 0,
         "updatedAt": "2026-07-02T04:38:40Z",
+        "isProtected": true
+    },
+    {
+        "name": "My-Store",
+        "owner": "My-Store-Group",
+        "ownerAvatar": "https://avatars.githubusercontent.com/u/298945401?v=4",
+        "description": "My Store",
+        "version": "v1.2.3",
+        "downloadUrl": "https://github.com/My-Store-Group/My-Store/releases/download/v1.2.3/My.Store.v1.2.3.apk",
+        "iconUrl": "https://raw.githubusercontent.com/My-Store-Group/My-Store/main/icon.png",
+        "screenshots": [
+            "https://raw.githubusercontent.com/My-Store-Group/My-Store/main/screenshot1.png",
+            "https://raw.githubusercontent.com/My-Store-Group/My-Store/main/screenshot2.png"
+        ],
+        "releaseNotes": "Ui Fix\r\nAbout section Added\r\nBug Fix!\r\nStability improvements ",
+        "fileSize": "18 MB",
+        "category": "Apps",
+        "repoUrl": "https://github.com/My-Store-Group/My-Store",
+        "stars": 2,
+        "forks": 0,
+        "updatedAt": "2026-07-02T11:35:53Z",
         "isProtected": true
     },
     {
