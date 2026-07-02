@@ -1,8 +1,8 @@
 name: Update App List
 on:
   schedule:
-    - cron: '0 * * * *' # Har ghante apne aap chalega
-  workflow_dispatch: # Aap manually bhi button daba kar chala sakte ho
+    - cron: '0 * * * *' # Har 1 ghante me chalega
+  workflow_dispatch: # Manual button
 
 jobs:
   build:
@@ -13,8 +13,13 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: '3.x'
+      
       - name: Install dependencies
-        run: pip install requests
+        run: |
+          pip install requests
+          sudo apt-get update
+          sudo apt-get install -y aapt2
+
       - name: Run Update Script
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -23,13 +28,33 @@ jobs:
           import requests
           import json
           import os
+          import subprocess
 
           token = os.getenv('GH_TOKEN')
           headers = {'Authorization': f'token {token}', 'Accept': 'application/vnd.github.v3+json'}
           
+          def get_package_name(url):
+              try:
+                  print(f"Downloading {url} to extract package name...")
+                  r = requests.get(url, stream=True)
+                  with open("temp.apk", "wb") as f:
+                      for chunk in r.iter_content(chunk_size=8192):
+                          f.write(chunk)
+                  
+                  # aapt2 tool se package name nikalna
+                  result = subprocess.run(["aapt2", "dump", "badging", "temp.apk"], capture_output=True, text=True)
+                  for line in result.stdout.splitlines():
+                      if "package: name=" in line:
+                          # Extracting name from: package: name='com.example.app' ...
+                          pname = line.split("'")[1]
+                          print(f"Found Package: {pname}")
+                          return pname
+              except Exception as e:
+                  print(f"Error: {e}")
+              return None
+
           def get_apps():
               apps = []
-              # Topic search
               query = "topic:my-store-distribution"
               url = f"https://api.github.com/search/repositories?q={query}"
               response = requests.get(url, headers=headers).json()
@@ -38,8 +63,8 @@ jobs:
               for repo in repos:
                   owner = repo['owner']['login']
                   name = repo['name']
+                  print(f"Processing {owner}/{name}...")
                   
-                  # Get releases
                   rel_url = f"https://api.github.com/repos/{owner}/{name}/releases"
                   releases = requests.get(rel_url, headers=headers).json()
                   
@@ -59,21 +84,12 @@ jobs:
                               release_notes = rel.get('body', "Updates included.")
                               break
                   
-                  if not apk_url:
-                      # Try contents for dev build
-                      cont_url = f"https://api.github.com/repos/{owner}/{name}/contents/"
-                      contents = requests.get(cont_url, headers=headers).json()
-                      if isinstance(contents, list):
-                          apk_file = next((f for f in contents if f['name'].lower().endswith('.apk')), None)
-                          if apk_file:
-                              apk_url = apk_file['download_url']
-                              apk_size = apk_file.get('size', 0)
-                              version = "Dev Build"
-
                   if apk_url:
+                      p_name = get_package_name(apk_url)
                       branch = repo.get('default_branch', 'main')
                       apps.append({
                           "name": name,
+                          "packageName": p_name, # Unique ID extracted from APK
                           "owner": owner,
                           "ownerAvatar": repo['owner']['avatar_url'],
                           "description": repo.get('description') or "Verified Distribution",
@@ -99,10 +115,11 @@ jobs:
           with open('apps.json', 'w') as f:
               json.dump(all_apps, f, indent=4)
           EOF
+
       - name: Commit and Push
         run: |
           git config --global user.name "GitHub Action"
           git config --global user.email "action@github.com"
           git add apps.json
-          git commit -m "Update apps.json" || exit 0
+          git commit -m "Update apps.json with package names" || exit 0
           git push
