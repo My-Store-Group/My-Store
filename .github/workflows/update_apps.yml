@@ -26,6 +26,7 @@ jobs:
           import requests
           import json
           import os
+          import re
           from pyaxmlparser import APK
 
           token = os.getenv('GH_TOKEN')
@@ -38,11 +39,8 @@ jobs:
                   with open("temp.apk", "wb") as f:
                       for chunk in r.iter_content(chunk_size=8192):
                           f.write(chunk)
-                  
-                  # Python library se package name nikalna
                   apk = APK("temp.apk")
                   pname = apk.package
-                  print(f"Found Package: {pname}")
                   return pname
               except Exception as e:
                   print(f"Error extracting APK info: {e}")
@@ -58,8 +56,29 @@ jobs:
               for repo in repos:
                   owner = repo['owner']['login']
                   name = repo['name']
+                  branch = repo.get('default_branch', 'main')
                   print(f"Processing {owner}/{name}...")
                   
+                  # Get All Files in Repo to find screenshots and banners
+                  contents_url = f"https://api.github.com/repos/{owner}/{name}/contents/"
+                  contents = requests.get(contents_url, headers=headers).json()
+                  
+                  screenshots = []
+                  banner_url = None
+                  
+                  if isinstance(contents, list):
+                      # Find all screenshot*.png or screenshot*.jpg
+                      ss_files = [f['name'] for f in contents if f['name'].lower().startswith('screenshot') and f['name'].lower().endswith(('.png', '.jpg', '.jpeg'))]
+                      # Sort numerically (screenshot1, screenshot2... screenshot15)
+                      ss_files.sort(key=lambda x: int(re.search(r'\d+', x).group()) if re.search(r'\d+', x) else 0)
+                      screenshots = [f"https://raw.githubusercontent.com/{owner}/{name}/{branch}/{f}" for f in ss_files]
+                      
+                      # Find banner.png or banner.jpg
+                      banner_file = next((f['name'] for f in contents if f['name'].lower().startswith('banner') and f['name'].lower().endswith(('.png', '.jpg', '.jpeg'))), None)
+                      if banner_file:
+                          banner_url = f"https://raw.githubusercontent.com/{owner}/{name}/{branch}/{banner_file}"
+
+                  # Get Release Details
                   rel_url = f"https://api.github.com/repos/{owner}/{name}/releases"
                   releases = requests.get(rel_url, headers=headers).json()
                   
@@ -81,7 +100,6 @@ jobs:
                   
                   if apk_url:
                       p_name = get_package_details(apk_url)
-                      branch = repo.get('default_branch', 'main')
                       apps.append({
                           "name": name,
                           "packageName": p_name,
@@ -91,16 +109,14 @@ jobs:
                           "version": version,
                           "downloadUrl": apk_url,
                           "iconUrl": f"https://raw.githubusercontent.com/{owner}/{name}/{branch}/icon.png",
-                          "screenshots": [
-                              f"https://raw.githubusercontent.com/{owner}/{name}/{branch}/screenshot1.png",
-                              f"https://raw.githubusercontent.com/{owner}/{name}/{branch}/screenshot2.png"
-                          ],
+                          "screenshots": screenshots,
+                          "bannerUrl": banner_url,
                           "releaseNotes": release_notes,
                           "fileSize": f"{apk_size // (1024 * 1024)} MB",
                           "category": "Games" if ("game" in (repo.get('topics') or []) or "game" in name.lower()) else "Apps",
                           "repoUrl": repo['html_url'],
-                          "stars": repo['stargazers_count'],
-                          "forks": repo['forks_count'],
+                          "stargazers_count": repo['stargazers_count'],
+                          "forks_count": repo['forks_count'],
                           "updatedAt": repo['updated_at'],
                           "isProtected": True
                       })
@@ -116,5 +132,5 @@ jobs:
           git config --global user.name "GitHub Action"
           git config --global user.email "action@github.com"
           git add apps.json
-          git commit -m "Update apps.json with package names" || exit 0
+          git commit -m "Update apps.json with dynamic screenshots and banners" || exit 0
           git push
