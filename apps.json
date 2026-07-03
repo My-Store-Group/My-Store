@@ -8,16 +8,14 @@
         "version": "v4.3.0",
         "downloadUrl": "https://github.com/Music-LLC/MusicApp/releases/download/v4.3.0/Music.v4.3.0.apk",
         "iconUrl": "https://raw.githubusercontent.com/Music-LLC/MusicApp/main/icon.png",
-        "screenshots": [
-            "https://raw.githubusercontent.com/Music-LLC/MusicApp/main/screenshot1.png",
-            "https://raw.githubusercontent.com/Music-LLC/MusicApp/main/screenshot2.png"
-        ],
+        "screenshots": [],
+        "bannerUrl": null,
         "releaseNotes": "\ud83c\udfb5 What's New in v4.3.0\r\n\r\n\ud83d\udd14Notification manager and \u2198\ufe0fDownload manager bug fix! and stability improvements.",
         "fileSize": "28 MB",
         "category": "Apps",
         "repoUrl": "https://github.com/Music-LLC/MusicApp",
-        "stars": 2,
-        "forks": 0,
+        "stargazers_count": 2,
+        "forks_count": 0,
         "updatedAt": "2026-07-02T14:53:40Z",
         "isProtected": true
     },
@@ -34,13 +32,14 @@
             "https://raw.githubusercontent.com/My-Store-Group/My-Store/main/screenshot1.png",
             "https://raw.githubusercontent.com/My-Store-Group/My-Store/main/screenshot2.png"
         ],
+        "bannerUrl": null,
         "releaseNotes": "\ud83d\udcf1 Android App Enhancements\r\n\u2022\r\nSmart Deep Linking \ud83d\udd17: Your app is now officially linked to your website. When a user clicks a mystoreapp.pages.dev link, the Android app opens automatically to the exact app page without asking \"Open with Browser?\".\r\n\u2022\r\nOfficial SHA-256 Verification \ud83d\udd11: We integrated your unique digital fingerprint. This makes your app \"Verified\" by the Android system, enabling seamless \"Open by Default\" behavior.\r\n\r\nUniversal Web-Link Sharing \ud83d\udce4: When you share an app from the Android UI, it now generates a professional web link. This ensures that even users who don't have the app can view the details on your website.\r\n\r\nUpdated Brand Identity \ud83c\udd94: All share links in the Profile and Settings have been updated from the old domain to your new official mystoreapp.pages.dev domain.\r\n\ud83c\udf10 Web Ecosystem & Integrations\r\n\r\nPremium \"Plus Jakarta\" UI \u2728: The entire website now uses the high-end Plus Jakarta Sans font with a modern, vertical card-based layout for a professional \"App Store\" feel.\r\n\r\nSecure Blob Download System \ud83d\udee1\ufe0f: We implemented an advanced download logic. Instead of redirecting to GitHub, the browser now fetches the file directly, ensuring 100% full downloads on mobile without any page jumps.\r\n\r\nChrome Security trust-Badge \ud83d\udee1\ufe0f: Added a professional \"Safety Section\" with original Chrome and Play Store icons. This explains to users that the \"File might be harmful\" warning is normal, building trust.\r\n\r\nMobile Redirect Fix \ud83d\udcf1: Fixed a major bug where mobile users were getting stuck on GitHub landing pages. Now, clicking \"Download\" triggers the file transfer immediately.\r\n\r\nDynamic SEO Slugs \ud83d\udcc2: Every app now has a unique, clean URL (e.g., /details/com.music.app) making it easy to share and index on search engines.",
         "fileSize": "18 MB",
         "category": "Apps",
         "repoUrl": "https://github.com/My-Store-Group/My-Store",
-        "stars": 2,
-        "forks": 0,
-        "updatedAt": "2026-07-03T13:20:07Z",
+        "stargazers_count": 2,
+        "forks_count": 0,
+        "updatedAt": "2026-07-03T17:13:59Z",
         "isProtected": true
     },
     {
@@ -56,12 +55,13 @@
             "https://raw.githubusercontent.com/Gallery-LLC/Gallery/main/screenshot1.png",
             "https://raw.githubusercontent.com/Gallery-LLC/Gallery/main/screenshot2.png"
         ],
+        "bannerUrl": null,
         "releaseNotes": "bug fix!\r\nStability improvements\r\nUi Enhance",
         "fileSize": "17 MB",
         "category": "Apps",
         "repoUrl": "https://github.com/Gallery-LLC/Gallery",
-        "stars": 1,
-        "forks": 0,
+        "stargazers_count": 1,
+        "forks_count": 0,
         "updatedAt": "2026-07-03T12:46:40Z",
         "isProtected": true
     },
@@ -74,16 +74,14 @@
         "version": "v2.2.3",
         "downloadUrl": "https://github.com/Phone-Group/PhoneApp/releases/download/v2.2.3/Phone.v2.2.3.apk",
         "iconUrl": "https://raw.githubusercontent.com/Phone-Group/PhoneApp/main/icon.png",
-        "screenshots": [
-            "https://raw.githubusercontent.com/Phone-Group/PhoneApp/main/screenshot1.png",
-            "https://raw.githubusercontent.com/Phone-Group/PhoneApp/main/screenshot2.png"
-        ],
+        "screenshots": [],
+        "bannerUrl": null,
         "releaseNotes": "Ui bug fix!\r\nopen to keypad and open to last view update.\r\nstability improvements",
         "fileSize": "18 MB",
         "category": "Apps",
         "repoUrl": "https://github.com/Phone-Group/PhoneApp",
-        "stars": 1,
-        "forks": 0,
+        "stargazers_count": 1,
+        "forks_count": 0,
         "updatedAt": "2026-07-02T16:00:36Z",
         "isProtected": true
     },
@@ -100,12 +98,13 @@
             "https://raw.githubusercontent.com/My-Files-LLC/MyFiles/main/screenshot1.png",
             "https://raw.githubusercontent.com/My-Files-LLC/MyFiles/main/screenshot2.png"
         ],
+        "bannerUrl": null,
         "releaseNotes": "minor bug fix!\r\nicon update\r\nApp Crash issues fix!",
         "fileSize": "35 MB",
         "category": "Apps",
         "repoUrl": "https://github.com/My-Files-LLC/MyFiles",
-        "stars": 1,
-        "forks": 0,
+        "stargazers_count": 1,
+        "forks_count": 0,
         "updatedAt": "2026-07-03T11:14:42Z",
         "isProtected": true
     },
@@ -122,12 +121,13 @@
             "https://raw.githubusercontent.com/Video-LLC/Video/main/screenshot1.png",
             "https://raw.githubusercontent.com/Video-LLC/Video/main/screenshot2.png"
         ],
+        "bannerUrl": null,
         "releaseNotes": "Ui Enhance \r\nMajor bug fix\r\nSmooth animation added",
         "fileSize": "20 MB",
         "category": "Apps",
         "repoUrl": "https://github.com/Video-LLC/Video",
-        "stars": 0,
-        "forks": 0,
+        "stargazers_count": 0,
+        "forks_count": 0,
         "updatedAt": "2026-07-03T13:19:28Z",
         "isProtected": true
     },
@@ -140,16 +140,14 @@
         "version": "v1.0.0",
         "downloadUrl": "https://github.com/AppLock-Group/App-Lock/releases/download/v1.0.0/AppLock.v1.0.0.apk",
         "iconUrl": "https://raw.githubusercontent.com/AppLock-Group/App-Lock/main/icon.png",
-        "screenshots": [
-            "https://raw.githubusercontent.com/AppLock-Group/App-Lock/main/screenshot1.png",
-            "https://raw.githubusercontent.com/AppLock-Group/App-Lock/main/screenshot2.png"
-        ],
+        "screenshots": [],
+        "bannerUrl": null,
         "releaseNotes": "App Lock",
         "fileSize": "20 MB",
         "category": "Apps",
         "repoUrl": "https://github.com/AppLock-Group/App-Lock",
-        "stars": 0,
-        "forks": 0,
+        "stargazers_count": 0,
+        "forks_count": 0,
         "updatedAt": "2026-07-02T15:08:21Z",
         "isProtected": true
     }
