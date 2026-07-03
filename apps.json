@@ -40,7 +40,29 @@
         "repoUrl": "https://github.com/My-Store-Group/My-Store",
         "stars": 2,
         "forks": 0,
-        "updatedAt": "2026-07-03T11:51:42Z",
+        "updatedAt": "2026-07-03T12:11:45Z",
+        "isProtected": true
+    },
+    {
+        "name": "Gallery",
+        "packageName": "com.amrutanshu.gallery",
+        "owner": "Gallery-LLC",
+        "ownerAvatar": "https://avatars.githubusercontent.com/u/299500361?v=4",
+        "description": "Gallery",
+        "version": "v1.1.2",
+        "downloadUrl": "https://github.com/Gallery-LLC/Gallery/releases/download/v1.1.2/Gallery.v1.1.2.apk",
+        "iconUrl": "https://raw.githubusercontent.com/Gallery-LLC/Gallery/main/icon.png",
+        "screenshots": [
+            "https://raw.githubusercontent.com/Gallery-LLC/Gallery/main/screenshot1.png",
+            "https://raw.githubusercontent.com/Gallery-LLC/Gallery/main/screenshot2.png"
+        ],
+        "releaseNotes": "bug fix!\r\nStability improvements\r\nUi Enhance",
+        "fileSize": "17 MB",
+        "category": "Apps",
+        "repoUrl": "https://github.com/Gallery-LLC/Gallery",
+        "stars": 1,
+        "forks": 0,
+        "updatedAt": "2026-07-03T12:46:40Z",
         "isProtected": true
     },
     {
@@ -110,25 +132,25 @@
         "isProtected": true
     },
     {
-        "name": "Gallery",
-        "packageName": "com.amrutanshu.gallery",
-        "owner": "Gallery-LLC",
-        "ownerAvatar": "https://avatars.githubusercontent.com/u/299500361?v=4",
-        "description": "Gallery",
-        "version": "v1.0.0",
-        "downloadUrl": "https://github.com/Gallery-LLC/Gallery/releases/download/v1.0.0/Gallery.v1.0.0.apk",
-        "iconUrl": "https://raw.githubusercontent.com/Gallery-LLC/Gallery/main/icon.png",
+        "name": "Video",
+        "packageName": "com.amrutanshu.video",
+        "owner": "Video-LLC",
+        "ownerAvatar": "https://avatars.githubusercontent.com/u/299526851?v=4",
+        "description": "Video",
+        "version": "v1.1.2",
+        "downloadUrl": "https://github.com/Video-LLC/Video/releases/download/v1.1.2/Video.v1.1.2.apk",
+        "iconUrl": "https://raw.githubusercontent.com/Video-LLC/Video/main/icon.png",
         "screenshots": [
-            "https://raw.githubusercontent.com/Gallery-LLC/Gallery/main/screenshot1.png",
-            "https://raw.githubusercontent.com/Gallery-LLC/Gallery/main/screenshot2.png"
+            "https://raw.githubusercontent.com/Video-LLC/Video/main/screenshot1.png",
+            "https://raw.githubusercontent.com/Video-LLC/Video/main/screenshot2.png"
         ],
-        "releaseNotes": "Gallery",
-        "fileSize": "17 MB",
+        "releaseNotes": "Ui Enhance \r\nMajor bug fix\r\nSmooth animation added",
+        "fileSize": "20 MB",
         "category": "Apps",
-        "repoUrl": "https://github.com/Gallery-LLC/Gallery",
+        "repoUrl": "https://github.com/Video-LLC/Video",
         "stars": 0,
         "forks": 0,
-        "updatedAt": "2026-07-03T11:51:07Z",
+        "updatedAt": "2026-07-03T13:19:28Z",
         "isProtected": true
     }
 ]
