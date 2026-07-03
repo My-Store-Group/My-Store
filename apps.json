@@ -40,7 +40,7 @@
         "repoUrl": "https://github.com/My-Store-Group/My-Store",
         "stars": 2,
         "forks": 0,
-        "updatedAt": "2026-07-03T06:31:25Z",
+        "updatedAt": "2026-07-03T09:57:13Z",
         "isProtected": true
     },
     {
@@ -85,6 +85,28 @@
         "stars": 0,
         "forks": 0,
         "updatedAt": "2026-07-02T15:08:21Z",
+        "isProtected": true
+    },
+    {
+        "name": "MyFiles",
+        "packageName": "com.amrutanshu.myfiles",
+        "owner": "My-Files-LLC",
+        "ownerAvatar": "https://avatars.githubusercontent.com/u/299481246?v=4",
+        "description": "My Files",
+        "version": "v1.0.0",
+        "downloadUrl": "https://github.com/My-Files-LLC/MyFiles/releases/download/v1.0.0/My.Files.v1.0.0.apk",
+        "iconUrl": "https://raw.githubusercontent.com/My-Files-LLC/MyFiles/main/icon.png",
+        "screenshots": [
+            "https://raw.githubusercontent.com/My-Files-LLC/MyFiles/main/screenshot1.png",
+            "https://raw.githubusercontent.com/My-Files-LLC/MyFiles/main/screenshot2.png"
+        ],
+        "releaseNotes": "My Files\r\n",
+        "fileSize": "35 MB",
+        "category": "Apps",
+        "repoUrl": "https://github.com/My-Files-LLC/MyFiles",
+        "stars": 0,
+        "forks": 0,
+        "updatedAt": "2026-07-03T10:33:09Z",
         "isProtected": true
     }
 ]
