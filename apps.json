@@ -40,7 +40,7 @@
         "repoUrl": "https://github.com/My-Store-Group/My-Store",
         "stars": 2,
         "forks": 0,
-        "updatedAt": "2026-07-03T12:11:45Z",
+        "updatedAt": "2026-07-03T13:20:07Z",
         "isProtected": true
     },
     {
@@ -110,28 +110,6 @@
         "isProtected": true
     },
     {
-        "name": "App-Lock",
-        "packageName": "com.example.applock",
-        "owner": "AppLock-Group",
-        "ownerAvatar": "https://avatars.githubusercontent.com/u/299174993?v=4",
-        "description": "App Lock",
-        "version": "v1.0.0",
-        "downloadUrl": "https://github.com/AppLock-Group/App-Lock/releases/download/v1.0.0/AppLock.v1.0.0.apk",
-        "iconUrl": "https://raw.githubusercontent.com/AppLock-Group/App-Lock/main/icon.png",
-        "screenshots": [
-            "https://raw.githubusercontent.com/AppLock-Group/App-Lock/main/screenshot1.png",
-            "https://raw.githubusercontent.com/AppLock-Group/App-Lock/main/screenshot2.png"
-        ],
-        "releaseNotes": "App Lock",
-        "fileSize": "20 MB",
-        "category": "Apps",
-        "repoUrl": "https://github.com/AppLock-Group/App-Lock",
-        "stars": 0,
-        "forks": 0,
-        "updatedAt": "2026-07-02T15:08:21Z",
-        "isProtected": true
-    },
-    {
         "name": "Video",
         "packageName": "com.amrutanshu.video",
         "owner": "Video-LLC",
@@ -151,6 +129,28 @@
         "stars": 0,
         "forks": 0,
         "updatedAt": "2026-07-03T13:19:28Z",
+        "isProtected": true
+    },
+    {
+        "name": "App-Lock",
+        "packageName": "com.example.applock",
+        "owner": "AppLock-Group",
+        "ownerAvatar": "https://avatars.githubusercontent.com/u/299174993?v=4",
+        "description": "App Lock",
+        "version": "v1.0.0",
+        "downloadUrl": "https://github.com/AppLock-Group/App-Lock/releases/download/v1.0.0/AppLock.v1.0.0.apk",
+        "iconUrl": "https://raw.githubusercontent.com/AppLock-Group/App-Lock/main/icon.png",
+        "screenshots": [
+            "https://raw.githubusercontent.com/AppLock-Group/App-Lock/main/screenshot1.png",
+            "https://raw.githubusercontent.com/AppLock-Group/App-Lock/main/screenshot2.png"
+        ],
+        "releaseNotes": "App Lock",
+        "fileSize": "20 MB",
+        "category": "Apps",
+        "repoUrl": "https://github.com/AppLock-Group/App-Lock",
+        "stars": 0,
+        "forks": 0,
+        "updatedAt": "2026-07-02T15:08:21Z",
         "isProtected": true
     }
 ]
