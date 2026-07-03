@@ -40,7 +40,7 @@
         "repoUrl": "https://github.com/My-Store-Group/My-Store",
         "stars": 2,
         "forks": 0,
-        "updatedAt": "2026-07-03T10:39:45Z",
+        "updatedAt": "2026-07-03T11:11:06Z",
         "isProtected": true
     },
     {
@@ -84,7 +84,7 @@
         "repoUrl": "https://github.com/My-Files-LLC/MyFiles",
         "stars": 1,
         "forks": 0,
-        "updatedAt": "2026-07-03T11:06:58Z",
+        "updatedAt": "2026-07-03T11:14:42Z",
         "isProtected": true
     },
     {
@@ -107,6 +107,28 @@
         "stars": 0,
         "forks": 0,
         "updatedAt": "2026-07-02T15:08:21Z",
+        "isProtected": true
+    },
+    {
+        "name": "Gallery",
+        "packageName": "com.amrutanshu.gallery",
+        "owner": "Gallery-LLC",
+        "ownerAvatar": "https://avatars.githubusercontent.com/u/299500361?v=4",
+        "description": "Gallery",
+        "version": "v1.0.0",
+        "downloadUrl": "https://github.com/Gallery-LLC/Gallery/releases/download/v1.0.0/Gallery.v1.0.0.apk",
+        "iconUrl": "https://raw.githubusercontent.com/Gallery-LLC/Gallery/main/icon.png",
+        "screenshots": [
+            "https://raw.githubusercontent.com/Gallery-LLC/Gallery/main/screenshot1.png",
+            "https://raw.githubusercontent.com/Gallery-LLC/Gallery/main/screenshot2.png"
+        ],
+        "releaseNotes": "Gallery",
+        "fileSize": "17 MB",
+        "category": "Apps",
+        "repoUrl": "https://github.com/Gallery-LLC/Gallery",
+        "stars": 0,
+        "forks": 0,
+        "updatedAt": "2026-07-03T11:51:07Z",
         "isProtected": true
     }
 ]
