@@ -16,11 +16,12 @@ jobs:
       
       - name: Install dependencies
         run: |
-          pip install requests pyaxmlparser
+          pip install requests pyaxmlparser google-auth
 
-      - name: Run Update Script
+      - name: Run Update Script and Notify
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          FCM_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_JSON }}
         run: |
           python - <<EOF
           import requests
@@ -28,6 +29,8 @@ jobs:
           import os
           import re
           from pyaxmlparser import APK
+          from google.oauth2 import service_account
+          import google.auth.transport.requests
 
           token = os.getenv('GH_TOKEN')
           headers = {'Authorization': f'token {token}', 'Accept': 'application/vnd.github.v3+json'}
@@ -117,38 +120,62 @@ jobs:
                       })
               return apps
 
+          # 1. Load old apps for comparison
+          old_apps = []
+          if os.path.exists('apps.json'):
+              try:
+                  with open('apps.json', 'r') as f:
+                      old_apps = json.load(f)
+              except: pass
+
+          # 2. Get current list of apps
           all_apps = get_apps()
+          
+          # 3. Detect changes
+          old_data = {a['packageName']: a['version'] for a in old_apps if 'packageName' in a}
+          new_app_name = ""
+          update_app_name = ""
+
+          for app in all_apps:
+              pkg = app['packageName']
+              if pkg not in old_data:
+                  new_app_name = app['name']
+                  break
+              elif app['version'] != old_data[pkg]:
+                  update_app_name = app['name']
+                  break
+
+          # 4. Write new apps.json
           with open('apps.json', 'w') as f:
               json.dump(all_apps, f, indent=4)
+          
+          # 5. Notify via Firebase
+          if (new_app_name or update_app_name) and os.getenv('FCM_SERVICE_ACCOUNT'):
+              print("Change detected! Sending notification...")
+              try:
+                  info = json.loads(os.getenv('FCM_SERVICE_ACCOUNT'))
+                  creds = service_account.Credentials.from_service_account_info(
+                      info, scopes=['https://www.googleapis.com/auth/firebase.messaging']
+                  )
+                  creds.refresh(google.auth.transport.requests.Request())
+                  
+                  title = "🚀 New App Added!" if new_app_name else "🔄 App Update Available!"
+                  body = f"'{new_app_name}' is now in My Store." if new_app_name else f"'{update_app_name}' just got an update!"
+                  
+                  res = requests.post(
+                      f"https://fcm.googleapis.com/v1/projects/{info['project_id']}/messages:send",
+                      json={"message": {"topic": "all_users", "notification": {"title": title, "body": body}}},
+                      headers={'Authorization': f'Bearer {creds.token}'}
+                  )
+                  print(f"Notification Sent: {res.status_code}")
+              except Exception as e:
+                  print(f"Notification Error: {e}")
           EOF
 
       - name: Commit and Push
-        id: commit_step
         run: |
           git config --global user.name "GitHub Action"
           git config --global user.email "action@github.com"
           git add apps.json
-          if git diff --staged --quiet; then
-            echo "changed=false" >> $GITHUB_OUTPUT
-          else
-            git commit -m "Update apps.json with dynamic screenshots and banners"
-            git push
-            echo "changed=true" >> $GITHUB_OUTPUT
-          fi
-
-      - name: Send Firebase Notification
-        if: steps.commit_step.outputs.changed == 'true'
-        env:
-          FCM_KEY: ${{ secrets.FIREBASE_SERVER_KEY }}
-        run: |
-          curl -X POST -H "Authorization: key=$FCM_KEY" \
-               -H "Content-Type: application/json" \
-               -d '{
-                 "to": "/topics/all_users",
-                 "notification": {
-                   "title": "🚀 My Store Update!",
-                   "body": "Naye apps aur updates available hain! Check out what is new in My Store.",
-                   "icon": "ic_notification"
-                 },
-                 "priority": "high"
-               }' https://fcm.googleapis.com/fcm/send
+          git commit -m "Update apps.json and notify users" || exit 0
+          git push
