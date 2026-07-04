@@ -20,6 +20,29 @@
         "isProtected": true
     },
     {
+        "name": "Gallery",
+        "packageName": "com.amrutanshu.gallery",
+        "owner": "Gallery-LLC",
+        "ownerAvatar": "https://avatars.githubusercontent.com/u/299500361?v=4",
+        "description": "Gallery",
+        "version": "v1.1.2",
+        "downloadUrl": "https://github.com/Gallery-LLC/Gallery/releases/download/v1.1.2/Gallery.v1.1.2.apk",
+        "iconUrl": "https://raw.githubusercontent.com/Gallery-LLC/Gallery/main/icon.png",
+        "screenshots": [
+            "https://raw.githubusercontent.com/Gallery-LLC/Gallery/main/screenshot1.png",
+            "https://raw.githubusercontent.com/Gallery-LLC/Gallery/main/screenshot2.png"
+        ],
+        "bannerUrl": null,
+        "releaseNotes": "bug fix!\r\nStability improvements\r\nUi Enhance",
+        "fileSize": "17 MB",
+        "category": "Apps",
+        "repoUrl": "https://github.com/Gallery-LLC/Gallery",
+        "stargazers_count": 2,
+        "forks_count": 0,
+        "updatedAt": "2026-07-04T01:21:47Z",
+        "isProtected": true
+    },
+    {
         "name": "My-Store",
         "packageName": "com.amrutanshu.mystore",
         "owner": "My-Store-Group",
@@ -48,50 +71,7 @@
         "repoUrl": "https://github.com/My-Store-Group/My-Store",
         "stargazers_count": 2,
         "forks_count": 0,
-        "updatedAt": "2026-07-03T21:04:30Z",
-        "isProtected": true
-    },
-    {
-        "name": "Gallery",
-        "packageName": "com.amrutanshu.gallery",
-        "owner": "Gallery-LLC",
-        "ownerAvatar": "https://avatars.githubusercontent.com/u/299500361?v=4",
-        "description": "Gallery",
-        "version": "v1.1.2",
-        "downloadUrl": "https://github.com/Gallery-LLC/Gallery/releases/download/v1.1.2/Gallery.v1.1.2.apk",
-        "iconUrl": "https://raw.githubusercontent.com/Gallery-LLC/Gallery/main/icon.png",
-        "screenshots": [
-            "https://raw.githubusercontent.com/Gallery-LLC/Gallery/main/screenshot1.png",
-            "https://raw.githubusercontent.com/Gallery-LLC/Gallery/main/screenshot2.png"
-        ],
-        "bannerUrl": null,
-        "releaseNotes": "bug fix!\r\nStability improvements\r\nUi Enhance",
-        "fileSize": "17 MB",
-        "category": "Apps",
-        "repoUrl": "https://github.com/Gallery-LLC/Gallery",
-        "stargazers_count": 1,
-        "forks_count": 0,
-        "updatedAt": "2026-07-03T12:46:40Z",
-        "isProtected": true
-    },
-    {
-        "name": "PhoneApp",
-        "packageName": "com.amrutanshu.phone",
-        "owner": "Phone-Group",
-        "ownerAvatar": "https://avatars.githubusercontent.com/u/298657294?v=4",
-        "description": "phone-distribution",
-        "version": "v2.2.3",
-        "downloadUrl": "https://github.com/Phone-Group/PhoneApp/releases/download/v2.2.3/Phone.v2.2.3.apk",
-        "iconUrl": "https://raw.githubusercontent.com/Phone-Group/PhoneApp/main/icon.png",
-        "screenshots": [],
-        "bannerUrl": null,
-        "releaseNotes": "Ui bug fix!\r\nopen to keypad and open to last view update.\r\nstability improvements",
-        "fileSize": "18 MB",
-        "category": "Apps",
-        "repoUrl": "https://github.com/Phone-Group/PhoneApp",
-        "stargazers_count": 1,
-        "forks_count": 0,
-        "updatedAt": "2026-07-02T16:00:36Z",
+        "updatedAt": "2026-07-03T23:01:58Z",
         "isProtected": true
     },
     {
@@ -112,9 +92,29 @@
         "fileSize": "35 MB",
         "category": "Apps",
         "repoUrl": "https://github.com/My-Files-LLC/MyFiles",
-        "stargazers_count": 1,
+        "stargazers_count": 2,
         "forks_count": 0,
-        "updatedAt": "2026-07-03T11:14:42Z",
+        "updatedAt": "2026-07-04T01:22:00Z",
+        "isProtected": true
+    },
+    {
+        "name": "PhoneApp",
+        "packageName": "com.amrutanshu.phone",
+        "owner": "Phone-Group",
+        "ownerAvatar": "https://avatars.githubusercontent.com/u/298657294?v=4",
+        "description": "phone-distribution",
+        "version": "v2.2.3",
+        "downloadUrl": "https://github.com/Phone-Group/PhoneApp/releases/download/v2.2.3/Phone.v2.2.3.apk",
+        "iconUrl": "https://raw.githubusercontent.com/Phone-Group/PhoneApp/main/icon.png",
+        "screenshots": [],
+        "bannerUrl": null,
+        "releaseNotes": "Ui bug fix!\r\nopen to keypad and open to last view update.\r\nstability improvements",
+        "fileSize": "18 MB",
+        "category": "Apps",
+        "repoUrl": "https://github.com/Phone-Group/PhoneApp",
+        "stargazers_count": 2,
+        "forks_count": 0,
+        "updatedAt": "2026-07-04T01:22:58Z",
         "isProtected": true
     },
     {
@@ -135,9 +135,9 @@
         "fileSize": "20 MB",
         "category": "Apps",
         "repoUrl": "https://github.com/Video-LLC/Video",
-        "stargazers_count": 0,
+        "stargazers_count": 1,
         "forks_count": 0,
-        "updatedAt": "2026-07-03T13:19:28Z",
+        "updatedAt": "2026-07-04T01:21:35Z",
         "isProtected": true
     },
     {
@@ -155,9 +155,9 @@
         "fileSize": "20 MB",
         "category": "Apps",
         "repoUrl": "https://github.com/AppLock-Group/App-Lock",
-        "stargazers_count": 0,
+        "stargazers_count": 1,
         "forks_count": 0,
-        "updatedAt": "2026-07-02T15:08:21Z",
+        "updatedAt": "2026-07-04T01:22:17Z",
         "isProtected": true
     }
 ]
