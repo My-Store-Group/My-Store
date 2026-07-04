@@ -59,7 +59,6 @@ jobs:
                   branch = repo.get('default_branch', 'main')
                   print(f"Processing {owner}/{name}...")
                   
-                  # Get All Files in Repo to find screenshots and banners
                   contents_url = f"https://api.github.com/repos/{owner}/{name}/contents/"
                   contents = requests.get(contents_url, headers=headers).json()
                   
@@ -67,18 +66,14 @@ jobs:
                   banner_url = None
                   
                   if isinstance(contents, list):
-                      # Find all screenshot*.png or screenshot*.jpg
                       ss_files = [f['name'] for f in contents if f['name'].lower().startswith('screenshot') and f['name'].lower().endswith(('.png', '.jpg', '.jpeg'))]
-                      # Sort numerically (screenshot1, screenshot2... screenshot15)
                       ss_files.sort(key=lambda x: int(re.search(r'\d+', x).group()) if re.search(r'\d+', x) else 0)
                       screenshots = [f"https://raw.githubusercontent.com/{owner}/{name}/{branch}/{f}" for f in ss_files]
                       
-                      # Find banner.png or banner.jpg
                       banner_file = next((f['name'] for f in contents if f['name'].lower().startswith('banner') and f['name'].lower().endswith(('.png', '.jpg', '.jpeg'))), None)
                       if banner_file:
                           banner_url = f"https://raw.githubusercontent.com/{owner}/{name}/{branch}/{banner_file}"
 
-                  # Get Release Details
                   rel_url = f"https://api.github.com/repos/{owner}/{name}/releases"
                   releases = requests.get(rel_url, headers=headers).json()
                   
@@ -128,9 +123,32 @@ jobs:
           EOF
 
       - name: Commit and Push
+        id: commit_step
         run: |
           git config --global user.name "GitHub Action"
           git config --global user.email "action@github.com"
           git add apps.json
-          git commit -m "Update apps.json with dynamic screenshots and banners" || exit 0
-          git push
+          if git diff --staged --quiet; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            git commit -m "Update apps.json with dynamic screenshots and banners"
+            git push
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Send Firebase Notification
+        if: steps.commit_step.outputs.changed == 'true'
+        env:
+          FCM_KEY: ${{ secrets.FIREBASE_SERVER_KEY }}
+        run: |
+          curl -X POST -H "Authorization: key=$FCM_KEY" \
+               -H "Content-Type: application/json" \
+               -d '{
+                 "to": "/topics/all_users",
+                 "notification": {
+                   "title": "🚀 My Store Update!",
+                   "body": "Naye apps aur updates available hain! Check out what is new in My Store.",
+                   "icon": "ic_notification"
+                 },
+                 "priority": "high"
+               }' https://fcm.googleapis.com/fcm/send
