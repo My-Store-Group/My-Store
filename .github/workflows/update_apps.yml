@@ -133,25 +133,27 @@ jobs:
           
           # 3. Detect changes
           old_data = {a['packageName']: a['version'] for a in old_apps if 'packageName' in a}
-          new_app_name = ""
-          update_app_name = ""
+          changed_app = None
+          is_new = False
 
           for app in all_apps:
               pkg = app['packageName']
               if pkg not in old_data:
-                  new_app_name = app['name']
+                  changed_app = app
+                  is_new = True
                   break
               elif app['version'] != old_data[pkg]:
-                  update_app_name = app['name']
+                  changed_app = app
+                  is_new = False
                   break
 
           # 4. Write new apps.json
           with open('apps.json', 'w') as f:
               json.dump(all_apps, f, indent=4)
           
-          # 5. Notify via Firebase
-          if (new_app_name or update_app_name) and os.getenv('FCM_SERVICE_ACCOUNT'):
-              print("Change detected! Sending notification...")
+          # 5. Notify via Firebase with Details & Icon
+          if changed_app and os.getenv('FCM_SERVICE_ACCOUNT'):
+              print(f"Sending notification for {changed_app['name']}...")
               try:
                   info = json.loads(os.getenv('FCM_SERVICE_ACCOUNT'))
                   creds = service_account.Credentials.from_service_account_info(
@@ -159,12 +161,29 @@ jobs:
                   )
                   creds.refresh(google.auth.transport.requests.Request())
                   
-                  title = "🚀 New App Added!" if new_app_name else "🔄 App Update Available!"
-                  body = f"'{new_app_name}' is now in My Store." if new_app_name else f"'{update_app_name}' just got an update!"
+                  title = "🚀 New App: " + changed_app['name'] if is_new else "🔄 Update: " + changed_app['name']
+                  body = f"Version: {changed_app['version']} | Size: {changed_app['fileSize']}\nCheck out the latest features in My Store!"
+                  
+                  notification_payload = {
+                      "message": {
+                          "topic": "all_users",
+                          "notification": {
+                              "title": title,
+                              "body": body,
+                              "image": changed_app['iconUrl'] # Show app icon as large image
+                          },
+                          "android": {
+                              "notification": {
+                                  "image": changed_app['iconUrl'],
+                                  "sound": "default"
+                              }
+                          }
+                      }
+                  }
                   
                   res = requests.post(
                       f"https://fcm.googleapis.com/v1/projects/{info['project_id']}/messages:send",
-                      json={"message": {"topic": "all_users", "notification": {"title": title, "body": body}}},
+                      json=notification_payload,
                       headers={'Authorization': f'Bearer {creds.token}'}
                   )
                   print(f"Notification Sent: {res.status_code}")
