@@ -91,8 +91,8 @@
         "owner": "My-Store-Group",
         "ownerAvatar": "https://avatars.githubusercontent.com/u/298945401?v=4",
         "description": "My Store",
-        "version": "v1.6.7",
-        "downloadUrl": "https://github.com/My-Store-Group/My-Store/releases/download/v1.6.7/My.Store.v1.6.7.apk",
+        "version": "v1.7.8",
+        "downloadUrl": "https://github.com/My-Store-Group/My-Store/releases/download/v1.7.8/My.Store.v1.7.8.apk",
         "iconUrl": "https://raw.githubusercontent.com/My-Store-Group/My-Store/main/icon.png",
         "screenshots": [
             "https://raw.githubusercontent.com/My-Store-Group/My-Store/main/screenshot1.png",
@@ -108,13 +108,13 @@
             "https://raw.githubusercontent.com/My-Store-Group/My-Store/main/screenshot11.png"
         ],
         "bannerUrl": null,
-        "releaseNotes": "\ud83d\udd25 What's New in My Store \ud83d\ude80\r\n\ud83d\udd10 Google Account Integration: Ab apna personal account banayein aur apni profile pic ke saath ek customized experience payein!\r\n\u2601\ufe0f Magic Cloud Backup: Aapki Wishlist aur Download History ab hamesha ke liye safe hai. Phone badlein ya app reinstall karein, aapka data apne aap wapas aa jayega!\r\n\ud83d\uddbc\ufe0f Premium Home Experience: Naye stylish Swipeable Banners aur Neon Glow Shadows ke saath ek ekdum naya aur fast interface.\r\n\ud83d\udcca Smart App Stats: Ab home screen par hi dekhein kis app ko kitne Stars (\u2605) mile hain aur uska Size kya hai.\r\n\ud83d\udcc1 Advanced Storage Manager: Apne phone ki storage manage karein! Downloaded files ko dekhein aur delete karein. Ab downloading ke waqt galti se file delete hone ka khatra bhi nahi.\r\n\ud83c\udfa8 Real App Icons: History aur Storage mein ab koi purane icons nahi, balki asli app icons aur names dikhenge, bilkul asli store ki tarah.\r\n\ud83d\udd04 Live Tracking: Download ke waqt ab aapko har jagah Live Progress dikhegi. Kaam pura hote hi Green Tick ka ishara!",
+        "releaseNotes": "\ud83d\udd25 What's New in My Store \ud83d\ude80\r\n\r\n\ud83d\udd10 Personalized Profiles: Sign in with your Google account to enjoy a customized experience featuring your name and profile picture.\r\n\u2601\ufe0f Smart Cloud Sync: Your Wishlist and Download History are now safely backed up. Switch devices or reinstall\u2014your data automatically syncs as soon as you log in!\r\n\ud83d\udd14 Instant Notifications: Never miss an update! Get real-time alerts on your phone whenever a new app is added or an update is released.\r\n\u2728 Premium Interface: Experience a brand-new look with stylish Horizontal Banners, auto-scrolling features, and modern Neon Glow shadows.\r\n\ud83d\udce5 Live Download Tracking: Monitor your downloads with real-time progress bars and get a Green Tick confirmation the moment an installation is ready.\r\n\ud83d\udcc2 Integrated Storage Manager: Manage your downloaded APKs effortlessly. You can now view, open, or delete files directly from within the store.\r\n\u2b50 Enhanced App Details: Get accurate information at a glance, including real App Sizes, User Ratings (Stars), and developer profiles.\r\n\ud83d\udee1\ufe0f Account-Based Security: Your data is now private and linked only to your account. Your history remains yours, across all your devices.",
         "fileSize": "22 MB",
         "category": "Apps",
         "repoUrl": "https://github.com/My-Store-Group/My-Store",
         "stargazers_count": 2,
         "forks_count": 0,
-        "updatedAt": "2026-07-04T10:28:21Z",
+        "updatedAt": "2026-07-04T10:28:56Z",
         "isProtected": true
     },
     {
