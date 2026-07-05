@@ -1,5 +1,25 @@
 [
     {
+        "name": "MusicApp",
+        "packageName": "com.amrutanshu.music",
+        "owner": "Music-LLC",
+        "ownerAvatar": "https://avatars.githubusercontent.com/u/298488720?v=4",
+        "description": "music-app-updates",
+        "version": "v4.3.0",
+        "downloadUrl": "https://github.com/Music-LLC/MusicApp/releases/download/v4.3.0/Music.v4.3.0.apk",
+        "iconUrl": "https://raw.githubusercontent.com/Music-LLC/MusicApp/main/icon.png",
+        "screenshots": [],
+        "bannerUrl": null,
+        "releaseNotes": "\ud83c\udfb5 What's New in v4.3.0\r\n\r\n\ud83d\udd14Notification manager and \u2198\ufe0fDownload manager bug fix! and stability improvements.",
+        "fileSize": "28 MB",
+        "category": "Apps",
+        "repoUrl": "https://github.com/Music-LLC/MusicApp",
+        "stargazers_count": 2,
+        "forks_count": 0,
+        "updatedAt": "2026-07-05T15:05:58Z",
+        "isProtected": true
+    },
+    {
         "name": "Gallery",
         "packageName": "com.amrutanshu.gallery",
         "owner": "Gallery-LLC",
@@ -20,26 +40,6 @@
         "stargazers_count": 2,
         "forks_count": 0,
         "updatedAt": "2026-07-04T01:21:47Z",
-        "isProtected": true
-    },
-    {
-        "name": "MusicApp",
-        "packageName": "com.amrutanshu.music",
-        "owner": "Music-LLC",
-        "ownerAvatar": "https://avatars.githubusercontent.com/u/298488720?v=4",
-        "description": "music-app-updates",
-        "version": "v4.3.0",
-        "downloadUrl": "https://github.com/Music-LLC/MusicApp/releases/download/v4.3.0/Music.v4.3.0.apk",
-        "iconUrl": "https://raw.githubusercontent.com/Music-LLC/MusicApp/main/icon.png",
-        "screenshots": [],
-        "bannerUrl": null,
-        "releaseNotes": "\ud83c\udfb5 What's New in v4.3.0\r\n\r\n\ud83d\udd14Notification manager and \u2198\ufe0fDownload manager bug fix! and stability improvements.",
-        "fileSize": "28 MB",
-        "category": "Apps",
-        "repoUrl": "https://github.com/Music-LLC/MusicApp",
-        "stargazers_count": 2,
-        "forks_count": 0,
-        "updatedAt": "2026-07-05T15:05:58Z",
         "isProtected": true
     },
     {
@@ -78,11 +78,11 @@
         "bannerUrl": null,
         "releaseNotes": "minor bug fix!\r\nicon update\r\nApp Crash issues fix!",
         "fileSize": "35 MB",
-        "category": "Games",
+        "category": "Apps",
         "repoUrl": "https://github.com/My-Files-LLC/MyFiles",
         "stargazers_count": 2,
         "forks_count": 0,
-        "updatedAt": "2026-07-05T15:49:39Z",
+        "updatedAt": "2026-07-05T23:31:02Z",
         "isProtected": true
     },
     {
@@ -114,7 +114,7 @@
         "repoUrl": "https://github.com/My-Store-Group/My-Store",
         "stargazers_count": 2,
         "forks_count": 0,
-        "updatedAt": "2026-07-05T20:58:26Z",
+        "updatedAt": "2026-07-05T22:07:47Z",
         "isProtected": true
     },
     {
