@@ -114,7 +114,7 @@
         "repoUrl": "https://github.com/My-Store-Group/My-Store",
         "stargazers_count": 2,
         "forks_count": 0,
-        "updatedAt": "2026-07-04T21:58:37Z",
+        "updatedAt": "2026-07-04T23:04:38Z",
         "isProtected": true
     },
     {
@@ -158,6 +158,26 @@
         "stargazers_count": 1,
         "forks_count": 0,
         "updatedAt": "2026-07-04T01:22:17Z",
+        "isProtected": true
+    },
+    {
+        "name": "SnakeGame",
+        "packageName": "com.amrutanshu.snakegame",
+        "owner": "SnakeGame-LLC",
+        "ownerAvatar": "https://avatars.githubusercontent.com/u/299975397?v=4",
+        "description": "SnakeGame",
+        "version": "v1.0.0",
+        "downloadUrl": "https://github.com/SnakeGame-LLC/SnakeGame/releases/download/v1.0.0/Snake.Game.v1.0.0.apk",
+        "iconUrl": "https://raw.githubusercontent.com/SnakeGame-LLC/SnakeGame/main/icon.png",
+        "screenshots": [],
+        "bannerUrl": null,
+        "releaseNotes": "Snake Game",
+        "fileSize": "6 MB",
+        "category": "Games",
+        "repoUrl": "https://github.com/SnakeGame-LLC/SnakeGame",
+        "stargazers_count": 0,
+        "forks_count": 0,
+        "updatedAt": "2026-07-05T01:03:55Z",
         "isProtected": true
     }
 ]
