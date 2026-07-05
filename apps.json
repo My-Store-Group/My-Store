@@ -114,7 +114,7 @@
         "repoUrl": "https://github.com/My-Store-Group/My-Store",
         "stargazers_count": 2,
         "forks_count": 0,
-        "updatedAt": "2026-07-05T11:54:10Z",
+        "updatedAt": "2026-07-05T12:15:34Z",
         "isProtected": true
     },
     {
@@ -161,6 +161,26 @@
         "isProtected": true
     },
     {
+        "name": "Tic-Tac-Toe",
+        "packageName": "com.amrutanshu.tictactoe",
+        "owner": "TicTacToeGame-LLC",
+        "ownerAvatar": "https://avatars.githubusercontent.com/u/300010768?v=4",
+        "description": "Tic-Tac-Toe game",
+        "version": "v1.0.0",
+        "downloadUrl": "https://github.com/TicTacToeGame-LLC/Tic-Tac-Toe/releases/download/v1.0.0/Tic.Tac.Toe.v1.0.0.apk",
+        "iconUrl": "https://raw.githubusercontent.com/TicTacToeGame-LLC/Tic-Tac-Toe/main/icon.png",
+        "screenshots": [],
+        "bannerUrl": null,
+        "releaseNotes": "Tic Tac Toe Game",
+        "fileSize": "8 MB",
+        "category": "Apps",
+        "repoUrl": "https://github.com/TicTacToeGame-LLC/Tic-Tac-Toe",
+        "stargazers_count": 0,
+        "forks_count": 0,
+        "updatedAt": "2026-07-05T11:58:29Z",
+        "isProtected": true
+    },
+    {
         "name": "SnakeGame",
         "packageName": "com.amrutanshu.snakegame",
         "owner": "SnakeGame-LLC",
@@ -178,26 +198,6 @@
         "stargazers_count": 0,
         "forks_count": 0,
         "updatedAt": "2026-07-05T04:47:21Z",
-        "isProtected": true
-    },
-    {
-        "name": "Tic-Tac-Toe",
-        "packageName": "com.amrutanshu.tictactoe",
-        "owner": "TicTacToeGame-LLC",
-        "ownerAvatar": "https://avatars.githubusercontent.com/u/300010768?v=4",
-        "description": "Tic-Tac-Toe game",
-        "version": "v1.0.0",
-        "downloadUrl": "https://github.com/TicTacToeGame-LLC/Tic-Tac-Toe/releases/download/v1.0.0/Tic.Tac.Toe.v1.0.0.apk",
-        "iconUrl": "https://raw.githubusercontent.com/TicTacToeGame-LLC/Tic-Tac-Toe/main/icon.png",
-        "screenshots": [],
-        "bannerUrl": null,
-        "releaseNotes": "Tic Tac Toe Game",
-        "fileSize": "8 MB",
-        "category": "Games",
-        "repoUrl": "https://github.com/TicTacToeGame-LLC/Tic-Tac-Toe",
-        "stargazers_count": 0,
-        "forks_count": 0,
-        "updatedAt": "2026-07-05T11:58:29Z",
         "isProtected": true
     }
 ]
