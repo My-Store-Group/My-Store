@@ -98,6 +98,19 @@ jobs:
                   
                   if apk_url:
                       p_name = get_package_details(apk_url)
+                      
+                      # --- DUAL CATEGORY LOGIC (Topic + Name) ---
+                      repo_topics = repo.get('topics') or []
+                      name_lower = name.lower()
+                      
+                      if "ms-cat-game" in repo_topics or "game" in name_lower:
+                          app_category = "Games"
+                      elif "ms-cat-tool" in repo_topics or "tool" in name_lower:
+                          app_category = "Tools"
+                      else:
+                          app_category = "Apps"
+                      # ------------------------------------------
+
                       apps.append({
                           "name": name,
                           "packageName": p_name,
@@ -111,7 +124,7 @@ jobs:
                           "bannerUrl": banner_url,
                           "releaseNotes": release_notes,
                           "fileSize": f"{apk_size // (1024 * 1024)} MB",
-                          "category": "Games" if ("game" in (repo.get('topics') or []) or "game" in name.lower()) else "Apps",
+                          "category": app_category,
                           "repoUrl": repo['html_url'],
                           "stargazers_count": repo['stargazers_count'],
                           "forks_count": repo['forks_count'],
