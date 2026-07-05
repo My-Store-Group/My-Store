@@ -1,48 +1,5 @@
 [
     {
-        "name": "MyFiles",
-        "packageName": "com.amrutanshu.myfiles",
-        "owner": "My-Files-LLC",
-        "ownerAvatar": "https://avatars.githubusercontent.com/u/299481246?v=4",
-        "description": "My Files",
-        "version": "v1.2.3",
-        "downloadUrl": "https://github.com/My-Files-LLC/MyFiles/releases/download/v1.2.3/My.Files.v1.2.3.apk",
-        "iconUrl": "https://raw.githubusercontent.com/My-Files-LLC/MyFiles/main/icon.png",
-        "screenshots": [
-            "https://raw.githubusercontent.com/My-Files-LLC/MyFiles/main/screenshot1.png",
-            "https://raw.githubusercontent.com/My-Files-LLC/MyFiles/main/screenshot2.png"
-        ],
-        "bannerUrl": null,
-        "releaseNotes": "minor bug fix!\r\nicon update\r\nApp Crash issues fix!",
-        "fileSize": "35 MB",
-        "category": "Apps",
-        "repoUrl": "https://github.com/My-Files-LLC/MyFiles",
-        "stargazers_count": 2,
-        "forks_count": 0,
-        "updatedAt": "2026-07-04T01:22:00Z",
-        "isProtected": true
-    },
-    {
-        "name": "PhoneApp",
-        "packageName": "com.amrutanshu.phone",
-        "owner": "Phone-Group",
-        "ownerAvatar": "https://avatars.githubusercontent.com/u/298657294?v=4",
-        "description": "phone-distribution",
-        "version": "v2.2.3",
-        "downloadUrl": "https://github.com/Phone-Group/PhoneApp/releases/download/v2.2.3/Phone.v2.2.3.apk",
-        "iconUrl": "https://raw.githubusercontent.com/Phone-Group/PhoneApp/main/icon.png",
-        "screenshots": [],
-        "bannerUrl": null,
-        "releaseNotes": "Ui bug fix!\r\nopen to keypad and open to last view update.\r\nstability improvements",
-        "fileSize": "18 MB",
-        "category": "Apps",
-        "repoUrl": "https://github.com/Phone-Group/PhoneApp",
-        "stargazers_count": 2,
-        "forks_count": 0,
-        "updatedAt": "2026-07-04T01:22:58Z",
-        "isProtected": true
-    },
-    {
         "name": "Gallery",
         "packageName": "com.amrutanshu.gallery",
         "owner": "Gallery-LLC",
@@ -86,6 +43,49 @@
         "isProtected": true
     },
     {
+        "name": "PhoneApp",
+        "packageName": "com.amrutanshu.phone",
+        "owner": "Phone-Group",
+        "ownerAvatar": "https://avatars.githubusercontent.com/u/298657294?v=4",
+        "description": "phone-distribution",
+        "version": "v2.2.3",
+        "downloadUrl": "https://github.com/Phone-Group/PhoneApp/releases/download/v2.2.3/Phone.v2.2.3.apk",
+        "iconUrl": "https://raw.githubusercontent.com/Phone-Group/PhoneApp/main/icon.png",
+        "screenshots": [],
+        "bannerUrl": null,
+        "releaseNotes": "Ui bug fix!\r\nopen to keypad and open to last view update.\r\nstability improvements",
+        "fileSize": "18 MB",
+        "category": "Apps",
+        "repoUrl": "https://github.com/Phone-Group/PhoneApp",
+        "stargazers_count": 2,
+        "forks_count": 0,
+        "updatedAt": "2026-07-04T01:22:58Z",
+        "isProtected": true
+    },
+    {
+        "name": "MyFiles",
+        "packageName": "com.amrutanshu.myfiles",
+        "owner": "My-Files-LLC",
+        "ownerAvatar": "https://avatars.githubusercontent.com/u/299481246?v=4",
+        "description": "My Files",
+        "version": "v1.2.3",
+        "downloadUrl": "https://github.com/My-Files-LLC/MyFiles/releases/download/v1.2.3/My.Files.v1.2.3.apk",
+        "iconUrl": "https://raw.githubusercontent.com/My-Files-LLC/MyFiles/main/icon.png",
+        "screenshots": [
+            "https://raw.githubusercontent.com/My-Files-LLC/MyFiles/main/screenshot1.png",
+            "https://raw.githubusercontent.com/My-Files-LLC/MyFiles/main/screenshot2.png"
+        ],
+        "bannerUrl": null,
+        "releaseNotes": "minor bug fix!\r\nicon update\r\nApp Crash issues fix!",
+        "fileSize": "35 MB",
+        "category": "Games",
+        "repoUrl": "https://github.com/My-Files-LLC/MyFiles",
+        "stargazers_count": 2,
+        "forks_count": 0,
+        "updatedAt": "2026-07-05T15:49:39Z",
+        "isProtected": true
+    },
+    {
         "name": "My-Store",
         "packageName": "com.amrutanshu.mystore",
         "owner": "My-Store-Group",
@@ -114,7 +114,7 @@
         "repoUrl": "https://github.com/My-Store-Group/My-Store",
         "stargazers_count": 2,
         "forks_count": 0,
-        "updatedAt": "2026-07-05T13:48:31Z",
+        "updatedAt": "2026-07-05T15:11:38Z",
         "isProtected": true
     },
     {
