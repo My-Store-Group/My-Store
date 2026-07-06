@@ -91,8 +91,8 @@
         "owner": "My-Store-Group",
         "ownerAvatar": "https://avatars.githubusercontent.com/u/298945401?v=4",
         "description": "My Store",
-        "version": "v1.9.9",
-        "downloadUrl": "https://github.com/My-Store-Group/My-Store/releases/download/v1.9.9/My.Store.v1.9.9.apk",
+        "version": "v2.0.0",
+        "downloadUrl": "https://github.com/My-Store-Group/My-Store/releases/download/v2.0.0/My.Store.v2.0.0.apk",
         "iconUrl": "https://raw.githubusercontent.com/My-Store-Group/My-Store/main/icon.png",
         "screenshots": [
             "https://raw.githubusercontent.com/My-Store-Group/My-Store/main/screenshot1.png",
@@ -108,13 +108,13 @@
             "https://raw.githubusercontent.com/My-Store-Group/My-Store/main/screenshot11.png"
         ],
         "bannerUrl": "https://raw.githubusercontent.com/My-Store-Group/My-Store/main/banner.png",
-        "releaseNotes": "bug fix \r\nnotification manager update\r\nstability improvements",
+        "releaseNotes": "bug fix !\r\nSystem crashing fix!",
         "fileSize": "24 MB",
         "category": "Apps",
         "repoUrl": "https://github.com/My-Store-Group/My-Store",
         "stargazers_count": 2,
         "forks_count": 0,
-        "updatedAt": "2026-07-06T04:18:03Z",
+        "updatedAt": "2026-07-06T04:32:03Z",
         "isProtected": true
     },
     {
