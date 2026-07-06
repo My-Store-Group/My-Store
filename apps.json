@@ -91,8 +91,8 @@
         "owner": "My-Store-Group",
         "ownerAvatar": "https://avatars.githubusercontent.com/u/298945401?v=4",
         "description": "My Store",
-        "version": "v1.8.9",
-        "downloadUrl": "https://github.com/My-Store-Group/My-Store/releases/download/v1.8.9/My.Store.v1.8.9.apk",
+        "version": "v1.9.9",
+        "downloadUrl": "https://github.com/My-Store-Group/My-Store/releases/download/v1.9.9/My.Store.v1.9.9.apk",
         "iconUrl": "https://raw.githubusercontent.com/My-Store-Group/My-Store/main/icon.png",
         "screenshots": [
             "https://raw.githubusercontent.com/My-Store-Group/My-Store/main/screenshot1.png",
@@ -108,13 +108,13 @@
             "https://raw.githubusercontent.com/My-Store-Group/My-Store/main/screenshot11.png"
         ],
         "bannerUrl": "https://raw.githubusercontent.com/My-Store-Group/My-Store/main/banner.png",
-        "releaseNotes": "\ud83d\udee1\ufe0f Premium Verified Shield with a black tick for trusted developers and profiles\r\n\ud83d\udcdd New \"Apply for Verification\" option to get your own verified badge\r\n\ud83d\udd14 Smart Notification Hub with real-time badges to never miss an update\r\n\ud83d\udcbe Persistent message history that keeps all your notifications saved inside the app\r\n\ud83d\ude80 Faster loading and data saving with smart sync logic (No more frequent refreshes)\r\n\ud83c\udfa8 Dynamic Theme support where the app look can change instantly without updates\r\n\u2699\ufe0f New \"Danger Zone\" in settings to let you permanently delete your account and data\r\n\ud83d\uded1 One-tap \"Cancel\" button for downloads directly from the notification bar\r\n\ud83d\udcf2 Full support for Dark/Light mode switching without losing your current page\r\n\ud83e\uddfc Cleaner and more professional Top Bar UI focused on your content",
+        "releaseNotes": "bug fix \r\nnotification manager update\r\nstability improvements",
         "fileSize": "24 MB",
         "category": "Apps",
         "repoUrl": "https://github.com/My-Store-Group/My-Store",
         "stargazers_count": 2,
         "forks_count": 0,
-        "updatedAt": "2026-07-06T02:42:39Z",
+        "updatedAt": "2026-07-06T03:04:29Z",
         "isProtected": true
     },
     {
