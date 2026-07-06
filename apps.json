@@ -91,8 +91,8 @@
         "owner": "My-Store-Group",
         "ownerAvatar": "https://avatars.githubusercontent.com/u/298945401?v=4",
         "description": "My Store",
-        "version": "v1.7.8",
-        "downloadUrl": "https://github.com/My-Store-Group/My-Store/releases/download/v1.7.8/My.Store.v1.7.8.apk",
+        "version": "v1.8.9",
+        "downloadUrl": "https://github.com/My-Store-Group/My-Store/releases/download/v1.8.9/My.Store.v1.8.9.apk",
         "iconUrl": "https://raw.githubusercontent.com/My-Store-Group/My-Store/main/icon.png",
         "screenshots": [
             "https://raw.githubusercontent.com/My-Store-Group/My-Store/main/screenshot1.png",
@@ -108,13 +108,13 @@
             "https://raw.githubusercontent.com/My-Store-Group/My-Store/main/screenshot11.png"
         ],
         "bannerUrl": "https://raw.githubusercontent.com/My-Store-Group/My-Store/main/banner.png",
-        "releaseNotes": "\ud83d\udd25 What's New in My Store \ud83d\ude80\r\n\r\n\ud83d\udd10 Personalized Profiles: Sign in with your Google account to enjoy a customized experience featuring your name and profile picture.\r\n\u2601\ufe0f Smart Cloud Sync: Your Wishlist and Download History are now safely backed up. Switch devices or reinstall\u2014your data automatically syncs as soon as you log in!\r\n\ud83d\udd14 Instant Notifications: Never miss an update! Get real-time alerts on your phone whenever a new app is added or an update is released.\r\n\u2728 Premium Interface: Experience a brand-new look with stylish Horizontal Banners, auto-scrolling features, and modern Neon Glow shadows.\r\n\ud83d\udce5 Live Download Tracking: Monitor your downloads with real-time progress bars and get a Green Tick confirmation the moment an installation is ready.\r\n\ud83d\udcc2 Integrated Storage Manager: Manage your downloaded APKs effortlessly. You can now view, open, or delete files directly from within the store.\r\n\u2b50 Enhanced App Details: Get accurate information at a glance, including real App Sizes, User Ratings (Stars), and developer profiles.\r\n\ud83d\udee1\ufe0f Account-Based Security: Your data is now private and linked only to your account. Your history remains yours, across all your devices.",
-        "fileSize": "22 MB",
+        "releaseNotes": "\ud83d\udee1\ufe0f Premium Verified Shield with a black tick for trusted developers and profiles\r\n\ud83d\udcdd New \"Apply for Verification\" option to get your own verified badge\r\n\ud83d\udd14 Smart Notification Hub with real-time badges to never miss an update\r\n\ud83d\udcbe Persistent message history that keeps all your notifications saved inside the app\r\n\ud83d\ude80 Faster loading and data saving with smart sync logic (No more frequent refreshes)\r\n\ud83c\udfa8 Dynamic Theme support where the app look can change instantly without updates\r\n\u2699\ufe0f New \"Danger Zone\" in settings to let you permanently delete your account and data\r\n\ud83d\uded1 One-tap \"Cancel\" button for downloads directly from the notification bar\r\n\ud83d\udcf2 Full support for Dark/Light mode switching without losing your current page\r\n\ud83e\uddfc Cleaner and more professional Top Bar UI focused on your content",
+        "fileSize": "24 MB",
         "category": "Apps",
         "repoUrl": "https://github.com/My-Store-Group/My-Store",
         "stargazers_count": 2,
         "forks_count": 0,
-        "updatedAt": "2026-07-06T00:03:58Z",
+        "updatedAt": "2026-07-06T02:42:39Z",
         "isProtected": true
     },
     {
