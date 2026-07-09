@@ -48,16 +48,16 @@
         "owner": "My-Files-LLC",
         "ownerAvatar": "https://avatars.githubusercontent.com/u/299481246?v=4",
         "description": "My Files",
-        "version": "v1.2.3",
-        "downloadUrl": "https://github.com/My-Files-LLC/MyFiles/releases/download/v1.2.3/My.Files.v1.2.3.apk",
+        "version": "v1.3.4",
+        "downloadUrl": "https://github.com/My-Files-LLC/MyFiles/releases/download/v1.3.4/My.Files.v1.3.4.apk",
         "iconUrl": "https://raw.githubusercontent.com/My-Files-LLC/MyFiles/main/icon.png",
         "screenshots": [
             "https://raw.githubusercontent.com/My-Files-LLC/MyFiles/main/screenshot1.png",
             "https://raw.githubusercontent.com/My-Files-LLC/MyFiles/main/screenshot2.png"
         ],
         "bannerUrl": null,
-        "releaseNotes": "minor bug fix!\r\nicon update\r\nApp Crash issues fix!",
-        "fileSize": "35 MB",
+        "releaseNotes": "New ui Update",
+        "fileSize": "44 MB",
         "category": "Apps",
         "repoUrl": "https://github.com/My-Files-LLC/MyFiles",
         "stargazers_count": 2,
@@ -114,7 +114,7 @@
         "repoUrl": "https://github.com/My-Store-Group/My-Store",
         "stargazers_count": 2,
         "forks_count": 0,
-        "updatedAt": "2026-07-09T02:51:03Z",
+        "updatedAt": "2026-07-09T06:53:13Z",
         "isProtected": true
     },
     {
