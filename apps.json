@@ -48,15 +48,15 @@
         "owner": "My-Files-LLC",
         "ownerAvatar": "https://avatars.githubusercontent.com/u/299481246?v=4",
         "description": "My Files",
-        "version": "v1.4.5",
-        "downloadUrl": "https://github.com/My-Files-LLC/MyFiles/releases/download/v1.4.5/My.Files.v1.4.5.apk",
+        "version": "v1.5.6",
+        "downloadUrl": "https://github.com/My-Files-LLC/MyFiles/releases/download/v1.5.6/My.Files.v1.5.6.apk",
         "iconUrl": "https://raw.githubusercontent.com/My-Files-LLC/MyFiles/main/icon.png",
         "screenshots": [
             "https://raw.githubusercontent.com/My-Files-LLC/MyFiles/main/screenshot1.png",
             "https://raw.githubusercontent.com/My-Files-LLC/MyFiles/main/screenshot2.png"
         ],
         "bannerUrl": null,
-        "releaseNotes": "Ui bug fix \r\nStability improvements\r\n",
+        "releaseNotes": "\ud83d\ude80 What's New in v1.5.6\r\n\r\n\ud83d\udcf3 Tactile Haptic Feedback Added subtle haptic vibrations when interacting with items for a more premium and responsive experience. \ud83d\udd90\ufe0f\r\n\r\n\ud83d\udccf Title Alignment Control Personalize your header! You can now choose to align your app title to the Left, Center, or Hide it completely. \ud83d\udee0\ufe0f\r\n\ud83d\udccc Sticky Headers Choose to keep the Search Bar or Title pinned at the top while you scroll through your files. \ud83d\udccd\r\n\r\n\ud83d\udd0d Minimal Search UI Switch between a full search bar or a sleek Search Icon in the header for a cleaner look. \ud83d\udcf1\r\n\r\n\ud83c\udfa8 Refreshed Visuals Updated category colors and enhanced \"Glassy\" UI effects for a more modern and consistent aesthetic. \u2728\r\n\r\n\u26a1 Smoother Interactions Enhanced animations and transitions for a faster, more fluid navigation experience. \ud83d\udca8\r\n\r\n\ud83d\udc1e Bug Fixes Fixed the annoying \"double search icon\" glitch and resolved various under-the-hood issues. \ud83d\udee0\ufe0f",
         "fileSize": "44 MB",
         "category": "Apps",
         "repoUrl": "https://github.com/My-Files-LLC/MyFiles",
@@ -114,7 +114,7 @@
         "repoUrl": "https://github.com/My-Store-Group/My-Store",
         "stargazers_count": 2,
         "forks_count": 0,
-        "updatedAt": "2026-07-10T04:50:16Z",
+        "updatedAt": "2026-07-10T04:50:56Z",
         "isProtected": true
     },
     {
