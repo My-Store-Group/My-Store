@@ -114,30 +114,7 @@
         "repoUrl": "https://github.com/My-Store-Group/My-Store",
         "stargazers_count": 2,
         "forks_count": 0,
-        "updatedAt": "2026-07-12T19:03:35Z",
-        "isProtected": true
-    },
-    {
-        "name": "Video",
-        "packageName": "com.amrutanshu.video",
-        "owner": "Video-LLC",
-        "ownerAvatar": "https://avatars.githubusercontent.com/u/299526851?v=4",
-        "description": "Video",
-        "version": "v1.1.2",
-        "downloadUrl": "https://github.com/Video-LLC/Video/releases/download/v1.1.2/Video.v1.1.2.apk",
-        "iconUrl": "https://raw.githubusercontent.com/Video-LLC/Video/main/icon.png",
-        "screenshots": [
-            "https://raw.githubusercontent.com/Video-LLC/Video/main/screenshot1.png",
-            "https://raw.githubusercontent.com/Video-LLC/Video/main/screenshot2.png"
-        ],
-        "bannerUrl": null,
-        "releaseNotes": "Ui Enhance \r\nMajor bug fix\r\nSmooth animation added",
-        "fileSize": "20 MB",
-        "category": "Apps",
-        "repoUrl": "https://github.com/Video-LLC/Video",
-        "stargazers_count": 1,
-        "forks_count": 0,
-        "updatedAt": "2026-07-04T01:21:35Z",
+        "updatedAt": "2026-07-12T20:44:05Z",
         "isProtected": true
     },
     {
