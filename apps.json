@@ -114,12 +114,12 @@
         "repoUrl": "https://github.com/My-Store-Group/My-Store",
         "stargazers_count": 2,
         "forks_count": 0,
-        "updatedAt": "2026-07-28T12:56:25Z",
+        "updatedAt": "2026-07-28T15:29:08Z",
         "isProtected": true
     },
     {
         "name": "Video",
-        "packageName": "com.amrutanshu.video",
+        "packageName": null,
         "owner": "Video-LLC",
         "ownerAvatar": "https://avatars.githubusercontent.com/u/299526851?v=4",
         "description": "Video",
