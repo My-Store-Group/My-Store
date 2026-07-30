@@ -48,16 +48,16 @@
         "owner": "My-Files-LLC",
         "ownerAvatar": "https://avatars.githubusercontent.com/u/299481246?v=4",
         "description": "My Files",
-        "version": "v1.8.9",
-        "downloadUrl": "https://github.com/My-Files-LLC/MyFiles/releases/download/v1.8.9/My.Files.v1.8.9.apk",
+        "version": "v1.9.9",
+        "downloadUrl": "https://github.com/My-Files-LLC/MyFiles/releases/download/v1.9.9/My.Files.v1.9.9.apk",
         "iconUrl": "https://raw.githubusercontent.com/My-Files-LLC/MyFiles/main/icon.png",
         "screenshots": [
             "https://raw.githubusercontent.com/My-Files-LLC/MyFiles/main/screenshot1.png",
             "https://raw.githubusercontent.com/My-Files-LLC/MyFiles/main/screenshot2.png"
         ],
         "bannerUrl": null,
-        "releaseNotes": "\u2022 Integrated Video Editor: You can now trim, cut, and merge your videos directly inside the app. No more switching to other apps just to join or clip your videos!\r\n\u2022 Quick \"Trim\" Access: Added a new 'Trim Video' option to the context menu. You can now jump straight into editing by selecting any video from the File Browser, Recent Files, or even your Private Vault.\r\n\u2022 Watch Progress Tracking: Ever forgot where you left off? I've added watch progress indicators (seeker lines) on all video thumbnails across the app, so you can track your viewing at a glance.\r\n\u2022 Detailed Video Grid: The video category now looks much cleaner. You can see the file name, size, and duration right below the thumbnails, making it easier to find exactly what you're looking for.\r\n\u2022 UI Polish: Refined the video thumbnails by removing extra background boxes from labels for a more seamless and modern look.\r\n\u2022 Improved Grid Scaling: Fixed those annoying layout shifts! Now, the video details stay perfectly aligned in a single line, even when you zoom out to the smallest grid size.",
-        "fileSize": "44 MB",
+        "releaseNotes": "What's new in v1.9.9\r\n\u2022 Watch Progress Tracking: Ever forgot where you left off? I've added watch progress indicators (seeker lines) on all video thumbnails across the app, so you can track your viewing at a glance.\r\n\u2022 Detailed Video Grid: The video category now looks much cleaner. You can see the file name, size, and duration right below the thumbnails, making it easier to find exactly what you're looking for.\r\n\u2022 UI Polish: Refined the video thumbnails by removing extra background boxes from labels for a more seamless and modern look.\r\n\u2022 Improved Grid Scaling: Fixed those annoying layout shifts! Now, the video details stay perfectly aligned in a single line, even when you zoom out to the smallest grid size.\r\n\u2022 Video player screen update with 2x speed .",
+        "fileSize": "34 MB",
         "category": "Apps",
         "repoUrl": "https://github.com/My-Files-LLC/MyFiles",
         "stargazers_count": 2,
@@ -114,7 +114,7 @@
         "repoUrl": "https://github.com/My-Store-Group/My-Store",
         "stargazers_count": 2,
         "forks_count": 0,
-        "updatedAt": "2026-07-30T17:26:16Z",
+        "updatedAt": "2026-07-30T19:23:57Z",
         "isProtected": true
     },
     {
