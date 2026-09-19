@@ -28,7 +28,7 @@
         "repoUrl": "https://github.com/My-Store-Group/My-Store",
         "stargazers_count": 3,
         "forks_count": 0,
-        "updatedAt": "2026-09-19T14:10:45Z",
+        "updatedAt": "2026-09-19T17:46:55Z",
         "isProtected": true
     },
     {
@@ -161,26 +161,6 @@
         "isProtected": true
     },
     {
-        "name": "Notes",
-        "packageName": "com.amrutanshu.notes",
-        "owner": "Notes-LLC",
-        "ownerAvatar": "https://avatars.githubusercontent.com/u/328598560?v=4",
-        "description": "Notes",
-        "version": "v1.0.0",
-        "downloadUrl": "https://github.com/Notes-LLC/Notes/releases/download/v1.0.0/Notes.v1.0.0.apk",
-        "iconUrl": "https://raw.githubusercontent.com/Notes-LLC/Notes/main/icon.png",
-        "screenshots": [],
-        "bannerUrl": null,
-        "releaseNotes": "\ud83c\udf89 What's New in Notes v1.0!\r\nWelcome to the all-new Notes app \u2014 your ultimate, modern, and ultra-fast digital notebook built with Material Design 3! Here is everything packed into this release:\r\n\u2728 Modern Material 3 Design & Animations Enjoy a sleek, fluid UI with adaptive dark and light themes, responsive layouts, and smooth spring animations on every interaction.\r\n\ud83d\udd12 Biometric & Passcode Security Protect your private notes with Fingerprint / Face Unlock or a 4-digit PIN lock. Locked notes keep your content completely hidden on the home screen until unlocked!\r\n\u23f0 Smart Scheduled Reminders Never miss an important task! Set date and time alarms on your notes to receive exact system notifications with a single tap.\r\n\ud83c\udfa8 Finger Drawing Canvas Pad Unleash your creativity! Draw quick sketches, diagrams, or signatures with custom brush colors and attach them straight to your notes.\r\n\ud83c\udff7\ufe0f Category Tags & Smart Filters Organize your thoughts effortlessly with custom tags like #Work, #Personal, #Ideas, #Shopping, and #Study, and filter them instantly.\r\n\u2b50 Favorites & Advanced Sorting Star your favorite notes for quick access, and sort your list by Last Modified, Creation Date, Title (A-Z), or Color Tag.\r\n\ud83d\uddd1\ufe0f 30-Day Recycle Bin & Multi-Select Deleted a note by mistake? No worries! Deleted notes stay in the Recycle Bin for 30 days before automatic cleanup, allowing easy restoration anytime. Multi-select notes to share or delete in bulk!\r\n\ud83d\udcd1 Export to PDF & Text Files Convert any note into a clean PDF Document or Text (.txt) File with a single click and share it anywhere.\r\n\ud83d\udcbe One-Tap Backup & Restore Keep your data safe forever! Export your entire notebook into a JSON backup file and restore it seamlessly on any device.\r\n\ud83d\udcca Live Word & Reading Time Stats Keep track of your writing with live word count, character count, and estimated reading time counters.",
-        "fileSize": "17 MB",
-        "category": "Tools",
-        "repoUrl": "https://github.com/Notes-LLC/Notes",
-        "stargazers_count": 0,
-        "forks_count": 0,
-        "updatedAt": "2026-09-13T04:47:37Z",
-        "isProtected": true
-    },
-    {
         "name": "Tic-Tac-Toe",
         "packageName": "com.amrutanshu.tictactoe",
         "owner": "TicTacToeGame-LLC",
@@ -198,6 +178,26 @@
         "stargazers_count": 0,
         "forks_count": 0,
         "updatedAt": "2026-07-05T12:28:39Z",
+        "isProtected": true
+    },
+    {
+        "name": "Notes",
+        "packageName": "com.amrutanshu.notes",
+        "owner": "Notes-LLC",
+        "ownerAvatar": "https://avatars.githubusercontent.com/u/328598560?v=4",
+        "description": "Notes",
+        "version": "v1.0.0",
+        "downloadUrl": "https://github.com/Notes-LLC/Notes/releases/download/v1.0.0/Notes.v1.0.0.apk",
+        "iconUrl": "https://raw.githubusercontent.com/Notes-LLC/Notes/main/icon.png",
+        "screenshots": [],
+        "bannerUrl": null,
+        "releaseNotes": "\ud83c\udf89 What's New in Notes v1.0!\r\nWelcome to the all-new Notes app \u2014 your ultimate, modern, and ultra-fast digital notebook built with Material Design 3! Here is everything packed into this release:\r\n\u2728 Modern Material 3 Design & Animations Enjoy a sleek, fluid UI with adaptive dark and light themes, responsive layouts, and smooth spring animations on every interaction.\r\n\ud83d\udd12 Biometric & Passcode Security Protect your private notes with Fingerprint / Face Unlock or a 4-digit PIN lock. Locked notes keep your content completely hidden on the home screen until unlocked!\r\n\u23f0 Smart Scheduled Reminders Never miss an important task! Set date and time alarms on your notes to receive exact system notifications with a single tap.\r\n\ud83c\udfa8 Finger Drawing Canvas Pad Unleash your creativity! Draw quick sketches, diagrams, or signatures with custom brush colors and attach them straight to your notes.\r\n\ud83c\udff7\ufe0f Category Tags & Smart Filters Organize your thoughts effortlessly with custom tags like #Work, #Personal, #Ideas, #Shopping, and #Study, and filter them instantly.\r\n\u2b50 Favorites & Advanced Sorting Star your favorite notes for quick access, and sort your list by Last Modified, Creation Date, Title (A-Z), or Color Tag.\r\n\ud83d\uddd1\ufe0f 30-Day Recycle Bin & Multi-Select Deleted a note by mistake? No worries! Deleted notes stay in the Recycle Bin for 30 days before automatic cleanup, allowing easy restoration anytime. Multi-select notes to share or delete in bulk!\r\n\ud83d\udcd1 Export to PDF & Text Files Convert any note into a clean PDF Document or Text (.txt) File with a single click and share it anywhere.\r\n\ud83d\udcbe One-Tap Backup & Restore Keep your data safe forever! Export your entire notebook into a JSON backup file and restore it seamlessly on any device.\r\n\ud83d\udcca Live Word & Reading Time Stats Keep track of your writing with live word count, character count, and estimated reading time counters.",
+        "fileSize": "17 MB",
+        "category": "Tools",
+        "repoUrl": "https://github.com/Notes-LLC/Notes",
+        "stargazers_count": 0,
+        "forks_count": 0,
+        "updatedAt": "2026-09-13T04:47:37Z",
         "isProtected": true
     },
     {
