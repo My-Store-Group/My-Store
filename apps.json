@@ -5,8 +5,8 @@
         "owner": "My-Store-Group",
         "ownerAvatar": "https://avatars.githubusercontent.com/u/298945401?v=4",
         "description": "My Store",
-        "version": "v2.2.3",
-        "downloadUrl": "https://github.com/My-Store-Group/My-Store/releases/download/v2.2.3/My.Store.v2.2.3.apk",
+        "version": "v2.3.4",
+        "downloadUrl": "https://github.com/My-Store-Group/My-Store/releases/download/v2.3.4/My.Store.v2.3.4.apk",
         "iconUrl": "https://raw.githubusercontent.com/My-Store-Group/My-Store/main/icon.png",
         "screenshots": [
             "https://raw.githubusercontent.com/My-Store-Group/My-Store/main/screenshot1.png",
@@ -22,13 +22,13 @@
             "https://raw.githubusercontent.com/My-Store-Group/My-Store/main/screenshot11.png"
         ],
         "bannerUrl": "https://raw.githubusercontent.com/My-Store-Group/My-Store/main/banner.png",
-        "releaseNotes": "Minor bug fix!!\r\nNew ui enhancement",
+        "releaseNotes": "New ui enhance and some minor bug fix!",
         "fileSize": "24 MB",
         "category": "Apps",
         "repoUrl": "https://github.com/My-Store-Group/My-Store",
         "stargazers_count": 3,
         "forks_count": 0,
-        "updatedAt": "2026-10-31T17:06:53Z",
+        "updatedAt": "2026-10-31T18:10:20Z",
         "isProtected": true
     },
     {
