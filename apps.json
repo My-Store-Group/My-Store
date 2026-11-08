@@ -28,12 +28,12 @@
         "repoUrl": "https://github.com/My-Store-Group/My-Store",
         "stargazers_count": 3,
         "forks_count": 0,
-        "updatedAt": "2026-11-07T23:25:26Z",
+        "updatedAt": "2026-11-08T04:30:41Z",
         "isProtected": true
     },
     {
         "name": "Gallery",
-        "packageName": "com.amrutanshu.gallery",
+        "packageName": null,
         "owner": "Gallery-LLC",
         "ownerAvatar": "https://avatars.githubusercontent.com/u/299500361?v=4",
         "description": "Gallery",
@@ -56,7 +56,7 @@
     },
     {
         "name": "MusicApp",
-        "packageName": "com.amrutanshu.music",
+        "packageName": null,
         "owner": "Music-LLC",
         "ownerAvatar": "https://avatars.githubusercontent.com/u/298488720?v=4",
         "description": "music-app-updates",
@@ -76,7 +76,7 @@
     },
     {
         "name": "MyFiles",
-        "packageName": "com.amrutanshu.myfiles",
+        "packageName": null,
         "owner": "My-Files-LLC",
         "ownerAvatar": "https://avatars.githubusercontent.com/u/299481246?v=4",
         "description": "My Files",
@@ -99,7 +99,7 @@
     },
     {
         "name": "PhoneApp",
-        "packageName": "com.amrutanshu.phone",
+        "packageName": null,
         "owner": "Phone-Group",
         "ownerAvatar": "https://avatars.githubusercontent.com/u/298657294?v=4",
         "description": "phone-distribution",
@@ -119,7 +119,7 @@
     },
     {
         "name": "Video",
-        "packageName": "com.amrutanshu.video",
+        "packageName": null,
         "owner": "Video-LLC",
         "ownerAvatar": "https://avatars.githubusercontent.com/u/299526851?v=4",
         "description": "Video",
@@ -142,7 +142,7 @@
     },
     {
         "name": "App-Lock",
-        "packageName": "com.example.applock",
+        "packageName": null,
         "owner": "AppLock-Group",
         "ownerAvatar": "https://avatars.githubusercontent.com/u/299174993?v=4",
         "description": "App Lock",
